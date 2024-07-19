@@ -1,0 +1,27 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="160" cy="160" r="160" fill="#5BEED3"/>
+<rect x="39" y="85" width="240" height="145.165" rx="10" fill="#2F2F2F"/>
+<rect x="50.4286" y="98.0886" width="218.286" height="120.177" fill="white"/>
+<line x1="5" y1="-5" x2="40.8956" y2="-5" transform="matrix(-0.806178 0.591673 -0.517996 -0.855383 126 136.544)" stroke="#012688" stroke-width="10" stroke-linecap="round"/>
+<line x1="5" y1="-5" x2="40.8956" y2="-5" transform="matrix(-0.806178 -0.591673 -0.517996 0.855383 126 194.848)" stroke="#012688" stroke-width="10" stroke-linecap="round"/>
+<line x1="5" y1="-5" x2="40.8956" y2="-5" transform="matrix(0.806178 0.591673 0.517996 -0.855383 193 137.734)" stroke="#012688" stroke-width="10" stroke-linecap="round"/>
+<line x1="5" y1="-5" x2="40.8956" y2="-5" transform="matrix(0.806178 -0.591673 0.517996 0.855383 193 196.038)" stroke="#012688" stroke-width="10" stroke-linecap="round"/>
+<path d="M170.243 133.785L148.714 201.028" stroke="#012688" stroke-width="10" stroke-linecap="round"/>
+<rect x="50.4286" y="98.0886" width="218.286" height="14.2785" fill="#DBF2FF"/>
+<rect x="118" y="64" width="9" height="14" fill="#34107E"/>
+<rect x="221" y="237" width="9" height="14" fill="#34107E"/>
+<rect x="221" y="258" width="9" height="14" fill="#34107E"/>
+<rect x="237" y="272" width="9" height="14" transform="rotate(-90 237 272)" fill="#34107E"/>
+<rect x="118" y="43" width="9" height="14" fill="#34107E"/>
+<rect x="97" y="52" width="9" height="14" transform="rotate(-90 97 52)" fill="#34107E"/>
+<ellipse cx="41.4935" cy="33" rx="20.4545" ry="19" fill="white"/>
+<ellipse cx="36.2338" cy="52" rx="36.2338" ry="19" fill="white"/>
+<ellipse cx="68.3766" cy="48.6471" rx="21.6234" ry="19" fill="white"/>
+<path d="M263.148 263.802L263.576 263.228C276.602 245.797 302.606 246.09 314.443 263.802V263.802" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M270.122 271.428L270.497 270.909C279.879 257.949 299.116 258.218 307.544 271.428V271.428" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M276.954 278.26L277.491 277.607C283.689 270.068 295.224 270.393 300.644 278.26V278.26" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="288.684" cy="287.027" rx="6.89994" ry="7.29544" fill="black"/>
+<circle cx="262" cy="105" r="5" fill="#FD4D42"/>
+<circle cx="249" cy="105" r="5" fill="#FDD442"/>
+<circle cx="235" cy="105" r="5" fill="#89FD42"/>
+</svg>

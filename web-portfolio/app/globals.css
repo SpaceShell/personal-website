@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --animation-delay: 1s; 
+  --hop-delay: 0s;
+  --top-anim: 0;
+  --left-anim: 0;
+  --hop-repeat-delay: 0;
+}
+
+@layer components {
+  .cards {
+    @apply shadow-[0px_4px_6px_4px_rgba(0,0,0,0.1),0_2px_4px_0px_rgba(0,0,0,0.1)] rounded-2xl w-full min-h-72 mt-12 px-7 pt-9 pb-12 text-center transition hover:scale-105 bg-white mb-7;
+  }
+  .cardsInnerTitle {
+    @apply font-bold text-xl;
+  }
+  .cardIcons {
+    @apply h-16 w-16 ml-auto mr-auto mb-4;
+  }
+  .cardsInnerText {
+    @apply text-left mt-3 mx-2;
+  }
+  .skillsRow {
+    @apply flex flex-row justify-around mb-7 flex-wrap;
+  }
+  .skill {
+    @apply w-32 my-2 md:basis-1/6 basis-1/2 text-center;
+  }
+  .sectionTitle {
+    @apply mt-16 mb-5 text-4xl font-bold font-sarabun text-red-800;
+  }
+  .skillText {
+    @apply font-bold min-w-fit w-2/3 mt-3 bg-amber-200 rounded-full ml-auto mr-auto px-4 mx-2;
+  }
+  .flowerAnims {
+    @apply w-full h-32;
+  }
+  li {
+    @apply ml-4;
+  }
+  h4 {
+    @apply font-bold;
+  }
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+.letters {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.for-sr {
+  clip: rect(0,0,0,0);
+  clip-path: inset(50%);
+}
+
+.singleLetters {
+  top: var(--top-anim);
+  left: var(--left-anim);
+  position: relative;
+  opacity: 0;
+  animation: closeIn 3s ease-out var(--animation-delay) forwards, littleJumps 0.6s var(--hop-delay) forwards;
+}
+
+.lettersOriginal {
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.repeatHops {
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: littleJumps 0.6s var(--hop-repeat-delay) forwards running;
+}
+
+@keyframes closeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes littleJumps {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: -15px;
+    left: 0;
+  }
+  85% {
+    top: 3px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.headerText {
+  opacity: 0;
+  animation: fade-in 3s 5.5s forwards;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0}
+  100% {opacity: 1;}
+}
+
+.gradientTransition {
+  background-size: 400% 100%;
+  background-position: 0% 100%;
+  transition: .5s;
+  background-image: linear-gradient(75deg, hsl(18, 79%, 50%) 0%, rgb(249 115 22) 20%, rgb(251 146 60) 85%, rgb(250 204 21) 100%);
+}
+
+.gradientTransition:hover {
+  background-position: 100% 100%;
+}
+
+.shineAnim {
+  animation: grow 1.5s ease-out forwards;
+}
+
+@keyframes grow {
+  0% {scale: 0;}
+  50% {scale: 1.3;}
+  100% {scale: 1;}
+}
+
+.shineCutouts {
+  height: 51%;
+  width: 51%;
+  background-color: white;
+}
+
+#HFHH {
+  background-image: url(../public/HomeForHealthyHabits.png);
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-out;
+}
+
+#HFHH:hover {
+  background-size: 130%;
+}
+
+.scroll-wrapper {
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.header-bg {
+  top: var(--top);
+  left: var(--left);
+  animation: moveX 18s linear infinite;
+}
+
+.header-bg-dupl {
+  top: var(--top);
+  left: calc(var(--left) + 100vw);
+  animation: moveX 18s linear infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes moveX {
+    0% {transform: translate(0vw);}
+    100% {transform: translate(-100vw);}
+  }
+}
