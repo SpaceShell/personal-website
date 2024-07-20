@@ -9,15 +9,12 @@ export default function Sun() {
         src: 'sun_button.riv',
         stateMachines: "Button State",
         autoplay: true,
-        layout: new Layout({
-            fit: Fit.Cover,
-        }),
     });
 
     const clickInput = useStateMachineInput(rive, "Button State", "Click");
 
     return (
-        <Link href="#info" scroll={true} className='w-32 h-32 mx-auto block' passHref legacyBehavior replace shallow locale={false}>
+        <Link href="#info" scroll={true} className='w-32 h-32 mx-auto block mb-4'>
             <RiveComponent
             onClick={() => clickInput && clickInput.fire()}
             className='w-32 h-32 mx-auto cursor-pointer mb-4'
