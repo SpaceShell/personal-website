@@ -2,11 +2,7 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
-import { Geologica, Istok_Web, Radio_Canada, Sarabun, Urbanist, Varela } from 'next/font/google'
-import { Button } from '@headlessui/react'
-import webDevImage from '../public/webdevImage.png'
-import computerImage from '../public/computerImage.png'
-import Circles from "./circles-anim";
+import { Sarabun } from 'next/font/google'
 
 const headerFont = Sarabun({ 
     subsets: ['latin'], 

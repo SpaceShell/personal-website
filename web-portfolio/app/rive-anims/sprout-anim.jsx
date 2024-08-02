@@ -1,8 +1,5 @@
 import { useRive, RuntimeLoader } from '@rive-app/react-canvas';
 import { useState } from 'react';
-import riveWASMResource from '@rive-app/canvas/rive.wasm';
-
-RuntimeLoader.setWasmUrl(riveWASMResource);
 
 export default function Sprout() {
     const [finished, setFinished] = useState(false);

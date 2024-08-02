@@ -3,7 +3,6 @@
 import { Inter } from "next/font/google";
 import { Vazirmatn, Sarabun } from 'next/font/google';
 import "./globals.css";
-import riveWasmUrl from '@rive-app/canvas/rive.wasm';
 
 const inter = Inter({ subsets: ["latin"] });
 const vazirmatn = Vazirmatn({ 
@@ -24,10 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="scroll-smooth" lang="en">
-      <head>
-        <link rel="preload" href={riveWasmUrl} as="fetch" crossOrigin="anonymous" />
-      </head>
+    <html className="!scroll-smooth" lang="en">
       <body className={`${vazirmatn.className} ${sarabun.variable}`}>{children}</body>
     </html>
   );
