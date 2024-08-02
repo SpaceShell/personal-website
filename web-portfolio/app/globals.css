@@ -8,6 +8,7 @@
   --top-anim: 0;
   --left-anim: 0;
   --hop-repeat-delay: 0;
+  --translateZ: 100px;
 }
 
 @layer components {
@@ -128,29 +129,65 @@
 
 .headerText {
   opacity: 0;
-  transform-origin: top;
-  animation: fade-in-up 3s 5.5s forwards, rotateX 14s 5s infinite;
-}
-
-.headerItems {
-  opacity: 0;
   animation: fade-in-up 3s 5.5s forwards;
 }
 
+.triangular {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: rotateX 14s 8.5s infinite;
+}
+
+.container-3d {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+#face1 {
+  transform: rotateX(0deg) translateZ(var(--translateZ));
+}
+
+#face2 {
+  transform: rotateX(120deg) translateZ(var(--translateZ));
+}
+
+#face3 {
+  transform: rotateX(240deg) translateZ(var(--translateZ));
+}
+
+/* @keyframes fade-in-up {
+  0% {opacity: 0; transform: translateY(20px) rotateX(var(--firstRotation));}
+  100% {opacity: 1; transform: translateY(0px) rotateX(var(--firstRotation));}
+} */
+
 @keyframes fade-in-up {
-  0% {opacity: 0; transform: translateY(20px)}
-  100% {opacity: 1; transform: translateY(0px);}
+  0% {opacity: 0; transform: translateY(20px) rotateX(var(--initialRotateX)) translateZ(var(--translateZ));}
+  100% {opacity: 1; transform: translateY(0px) rotateX(var(--initialRotateX)) translateZ(var(--translateZ));}
 }
 
 @keyframes rotateX {
-  0% {transform: rotateX(var(--firstRotation));}
-  17% {transform: rotateX(var(--secondRotation));}
-  33% {transform: rotateX(var(--secondRotation));}
-  50% {transform: rotateX(var(--thirdRotation));}
-  67% {transform: rotateX(var(--thirdRotation));}
-  83% {transform: rotateX(var(--fourthRotation));}
-  100% {transform: rotateX(var(--fourthRotation));}
+  0% {transform: rotateX(0deg);}
+  17% {transform: rotateX(0deg);}
+  33% {transform: rotateX(120deg);}
+  50% {transform: rotateX(120deg);}
+  67% {transform: rotateX(240deg);}
+  83% {transform: rotateX(240deg);}
+  100% {transform: rotateX(360deg);}
 }
+
+/* @keyframes rotateX {
+  0% {transform: rotateX(var(--firstRotation)) translateZ(var(--zValue)); transform-origin: var(--firstOrigin);}
+  17% {transform: rotateX(var(--firstRotation)) translateZ(var(--zValue)); transform-origin: var(--firstOrigin)}
+  33% {transform: rotateX(var(--secondRotation)) translateZ(var(--zValue)); transform-origin: var(--secondOrigin)}
+  50% {transform: rotateX(var(--secondRotation)) translateZ(var(--zValue)); transform-origin: var(--secondOrigin)}
+  67% {transform: rotateX(var(--thirdRotation)) translateZ(var(--zValue)); transform-origin: var(--thirdOrigin)}
+  83% {transform: rotateX(var(--thirdRotation)) translateZ(var(--zValue)); transform-origin: var(--thirdOrigin)}
+  100% {transform: rotateX(var(--fourthRotation)) translateZ(var(--zValue)); transform-origin: var(--fourthOrigin)}
+} */
+
 
 .gradientTransition {
   background-size: 400% 100%;
