@@ -32,10 +32,10 @@ export default function Sun() {
       }, [sun, rive]);
 
     return (
-        <Link href="#info" scroll={true} className='w-32 h-32 mx-auto block mb-4 headerItems' ref={sun}>
+        <Link href="#info" scroll={true} className='w-32 h-32 mx-auto block mb-4 headerText' ref={sun}>
             <RiveComponent
             onClick={() => clickInput && clickInput.fire()}
-            className='w-32 h-32 mx-auto cursor-pointer mb-4'
+            className='w-24 h-24 mx-auto cursor-pointer mb-4'
             />
         </Link>
     );

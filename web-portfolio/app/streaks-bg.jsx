@@ -50,3 +50,44 @@
 //     </div>
 //   );
 // }
+
+import React, { useState, useEffect } from "react";
+
+export default function Circles() {
+    const [el, setEl] = useState([{top: 0, left: 0}, {top: 0, left: 0}, {top: 0, left: 0}, {top: 0, left: 0}, {top: 0, left: 0}]);
+    
+    useEffect(() => {
+        let elList = [];
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        
+        for (var i=0; i<5; i++) {
+            let element = {
+                left: 0,
+                top: 0
+            };
+            element.left = getRandomInt(90);
+            element.top = getRandomInt(98);
+            elList.push(element);
+        } 
+
+        setEl(elList);
+    }, []);
+
+  return (
+    // <div>
+    // {/* <div className="w-5/6 absolute h-[88%] overflow-hidden  top-0 bottom-0 left-0 right-0 m-auto rounded-2xl border-2 border-gray-200 bg-gray-50 z-0" aria-hidden="true">
+    // </div> */}
+    // </div>
+    <div className="w-full absolute h-full overflow-hidden scroll-wrapper" aria-hidden="true">
+      {el.map((el, i) => {
+        return <div key={i} className="bg-gradient-to-r from-red-200/90 from-40% header-bg absolute h-1 w-20 lg:h-1 lg:w-40 rounded-full drop-shadow-sm" style={{"--top": el.top + "%", "--left": el.left + "%"}}></div>
+      })}
+      {el.map((el, i) => {
+        return <div key={i + 10} className="bg-gradient-to-r from-red-200/90 from-40% header-bg-dupl absolute h-1 w-20 lg:h-1 lg:w-40 rounded-full drop-shadow-sm" style={{"--top": el.top + "%", "--left": el.left + "%"}}></div>
+      })}
+    </div>
+  );
+}

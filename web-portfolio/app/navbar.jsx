@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white shadow sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-white shadow-sm sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-full px-4 sm:px-8 lg:px-10">
@@ -53,7 +53,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-gray-900' : 'text-gray-400 transition-colors duration-300 hover:text-gray-600',
+                          item.current ? 'text-gray-900' : 'text-gray-400 tracking-wider transition-colors duration-300 hover:text-gray-600',
                           "rounded-md px-3 py-2 text-sm font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900",
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -77,7 +77,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current ? 'text-gray-900' : 'text-gray-400 transition hover:text-gray-600',
-                    "block rounded-md px-3 py-2 text-base font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:duration-200 after:w-0 hover:after:w-full after:left-0 after:h-0.5 after:mx-auto after:bottom-1.5",
+                    "block rounded-md px-3 py-2 text-base tracking-wider font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:duration-200 after:w-0 hover:after:w-full after:left-0 after:h-0.5 after:mx-auto after:bottom-1.5",
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

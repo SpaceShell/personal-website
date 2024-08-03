@@ -8,7 +8,8 @@
   --top-anim: 0;
   --left-anim: 0;
   --hop-repeat-delay: 0;
-  --translateZ: 100px;
+  --translateZ: 15px;
+  --initialRotateX: 0;
 }
 
 @layer components {
@@ -132,62 +133,35 @@
   animation: fade-in-up 3s 5.5s forwards;
 }
 
+@keyframes fade-in-up {
+  0% {opacity: 0; transform: scale(1) translateY(20px) rotateX(var(--initialRotateX)) translateZ(var(--translateZ));}
+  100% {opacity: 1; transform: scale(1) translateY(0px) rotateX(var(--initialRotateX)) translateZ(var(--translateZ));}
+}
+
 .triangular {
   transform-style: preserve-3d;
-  width: 100%;
-  height: 100%;
   position: relative;
-  animation: rotateX 14s 8.5s infinite;
+  animation: rotateX 15s 8.5s infinite;
 }
 
 .container-3d {
   perspective: 1000px;
-  width: 100%;
-  height: 100%;
 }
 
 #face1 {
-  transform: rotateX(0deg) translateZ(var(--translateZ));
+  transform: scale(1.048) rotateX(0deg) translateZ(var(--translateZ));
+  backface-visibility: hidden;
 }
 
 #face2 {
-  transform: rotateX(120deg) translateZ(var(--translateZ));
+  transform: scale(1.048) rotateX(240deg) translateZ(var(--translateZ));
+  backface-visibility: hidden;
 }
 
 #face3 {
-  transform: rotateX(240deg) translateZ(var(--translateZ));
+  transform: scale(1.048) rotateX(120deg) translateZ(var(--translateZ));
+  backface-visibility: hidden;
 }
-
-/* @keyframes fade-in-up {
-  0% {opacity: 0; transform: translateY(20px) rotateX(var(--firstRotation));}
-  100% {opacity: 1; transform: translateY(0px) rotateX(var(--firstRotation));}
-} */
-
-@keyframes fade-in-up {
-  0% {opacity: 0; transform: translateY(20px) rotateX(var(--initialRotateX)) translateZ(var(--translateZ));}
-  100% {opacity: 1; transform: translateY(0px) rotateX(var(--initialRotateX)) translateZ(var(--translateZ));}
-}
-
-@keyframes rotateX {
-  0% {transform: rotateX(0deg);}
-  17% {transform: rotateX(0deg);}
-  33% {transform: rotateX(120deg);}
-  50% {transform: rotateX(120deg);}
-  67% {transform: rotateX(240deg);}
-  83% {transform: rotateX(240deg);}
-  100% {transform: rotateX(360deg);}
-}
-
-/* @keyframes rotateX {
-  0% {transform: rotateX(var(--firstRotation)) translateZ(var(--zValue)); transform-origin: var(--firstOrigin);}
-  17% {transform: rotateX(var(--firstRotation)) translateZ(var(--zValue)); transform-origin: var(--firstOrigin)}
-  33% {transform: rotateX(var(--secondRotation)) translateZ(var(--zValue)); transform-origin: var(--secondOrigin)}
-  50% {transform: rotateX(var(--secondRotation)) translateZ(var(--zValue)); transform-origin: var(--secondOrigin)}
-  67% {transform: rotateX(var(--thirdRotation)) translateZ(var(--zValue)); transform-origin: var(--thirdOrigin)}
-  83% {transform: rotateX(var(--thirdRotation)) translateZ(var(--zValue)); transform-origin: var(--thirdOrigin)}
-  100% {transform: rotateX(var(--fourthRotation)) translateZ(var(--zValue)); transform-origin: var(--fourthOrigin)}
-} */
-
 
 .gradientTransition {
   background-size: 400% 100%;
@@ -235,19 +209,29 @@
 .header-bg {
   top: var(--top);
   left: var(--left);
-  animation: moveX 18s linear infinite;
+  animation: moveX 6s linear infinite;
 }
 
 .header-bg-dupl {
   top: var(--top);
   left: calc(var(--left) + 100vw);
   will-change: transform;
-  animation: moveX 18s linear infinite;
+  animation: moveX 6s linear infinite;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   @keyframes moveX {
     0% {transform: translate(0vw);}
     100% {transform: translate(-100vw);}
+  }
+
+  @keyframes rotateX {
+    0% {transform: rotateX(0deg) translateZ(0);}
+    17% {transform: rotateX(0deg) translateZ(0);}
+    33% {transform: rotateX(120deg) translateZ(0);}
+    50% {transform: rotateX(120deg) translateZ(0);}
+    67% {transform: rotateX(240deg) translateZ(0);}
+    83% {transform: rotateX(240deg) translateZ(0);}
+    100% {transform: rotateX(360deg) translateZ(0);}
   }
 }
