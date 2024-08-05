@@ -10,10 +10,10 @@ const vazirmatn = Vazirmatn({
   weight: ['400'] 
 })
 
-const sarabun = Sarabun({ 
+const sarabunExtrabold = Sarabun({ 
   subsets: ['latin'], 
   weight: ['800'],
-  variable: '--font-sarabun',
+  variable: '--font-sarabunExtrabold',
 })
 
 export const metadata = {
@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="!scroll-smooth" lang="en">
-      <body className={`${vazirmatn.className} ${sarabun.variable}`}>{children}</body>
+      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable}`}>{children}</body>
     </html>
   );
 }

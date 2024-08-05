@@ -2,12 +2,6 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
-import { Sarabun } from 'next/font/google'
-
-const headerFont = Sarabun({ 
-    subsets: ['latin'], 
-    weight: ['400']
-})
 
 //Starting animation
 const letterAnim = () => {
@@ -91,7 +85,7 @@ export default function Header() {
     }
 
     return(
-        <h1 className={"font-sarabun md:mt-24 mt-16 px-3 text-6xl font-black z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
+        <h1 className={"font-sarabun md:mt-32 mt-16 px-3 text-6xl font-black z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
             <SplitText str={"Hello, I'm Steve Luis!"} hover={hover} setHover={setHover} introEnded={introEnded} setIntroEnded={setIntroEnded}/>
         </h1>
     )

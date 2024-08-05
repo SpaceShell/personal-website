@@ -32,7 +32,7 @@
     @apply w-32 my-2 md:basis-1/6 basis-1/2 text-center;
   }
   .sectionTitle {
-    @apply md:mt-16 mt-10 mb-6 text-4xl font-bold font-sarabun text-red-800;
+    @apply md:mt-16 mt-10 mb-6 text-[2.35rem] font-bold font-sarabun text-red-800;
   }
   .skillText {
     @apply font-bold min-w-fit w-2/3 mt-3 bg-amber-200 rounded-full ml-auto mr-auto px-4 mx-2;
@@ -130,7 +130,7 @@
 
 .headerText {
   opacity: 0;
-  animation: fade-in-up 3s 5.5s forwards;
+  animation: fade-in-up 2s 5.2s forwards;
 }
 
 @keyframes fade-in-up {

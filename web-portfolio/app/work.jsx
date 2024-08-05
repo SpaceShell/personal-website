@@ -14,7 +14,7 @@ export default function Work() {
                 <div className="flex md:flex-row flex-col  md:mx-32 mx-10 mb-32 place-items-center mt-20 md:mt-28">
                 {/* <div className="flex md:flex-row flex-col  md:mx-32 mx-10 mb-24 place-items-center"> */}
                     <div className="basis-2/3 md:pr-20">
-                        <h2 className="sectionTitle mt-0 mb-5">What I Do</h2>
+                        <h2 className="sectionTitle mt-0 mb-2">What I Do</h2>
                         {/* <p className="font-bold text-2xl mb-3 text-center">Project Impact</p> */}
                         <p>Using a blend of web technology and creative skills, I work to plan as well as efficiently develop web solutions that aid business outcomes by crafting functionally optimized applications ready for clients to use and providing engaging interactivity for users on the frontend. Through masterful problem-solving and a user-focused approach, I ensure the growth and impact of applications developed as I dedicate myself to the following areas:</p>
                     </div>
