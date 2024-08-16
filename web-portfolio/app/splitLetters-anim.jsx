@@ -45,7 +45,7 @@ const SplitText = React.memo(({ str, hover, setHover, introEnded, setIntroEnded 
             } else if (i > 10) {
                 return <span aria-hidden="true" key={i} id={letter} className={`${introEnded ? 
                     hover ? 'repeatHops' : 'lettersOriginal' 
-                    : 'singleLetters'} text-black`}onAnimationEnd={
+                    : 'singleLetters'} text-red-700`}onAnimationEnd={
                 e => 
                 {
                     if (e.animationName == "littleJumps" && e.target.innerHTML == "!" && e.elapsedTime > 0) {
@@ -85,7 +85,7 @@ export default function Header() {
     }
 
     return(
-        <h1 className={"font-sarabun md:mt-32 mt-16 px-3 text-6xl font-black z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
+        <h1 className={"font-ExBoldsarabun md:mt-28 mt-16 pl-44 text-6xl font-black z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
             <SplitText str={"Hello, I'm Steve Luis!"} hover={hover} setHover={setHover} introEnded={introEnded} setIntroEnded={setIntroEnded}/>
         </h1>
     )
