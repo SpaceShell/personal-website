@@ -4,28 +4,16 @@ import React from "react";
 import responsiveIcon from "../public/ResponsiveIcon.svg";
 import webdevIcon from "../public/WebDevIcon.svg";
 import uiuxIcon from "../public/UIUXIcon.svg";
-import webDevImage from '../public/webdevImage.png'
 
 export default function Work() {
     return (
-        <section className="py-4 mb-10" id="info">
+        <section className="mb-9" id="info">
             <div>
-                <h2 className="sectionTitle mt-0 md:mx-32 mx-10 mt-20 md:mt-28 mb-6 text-center relative after:content-[''] after:absolute after:w-44 after:h-1 after:bg-red-900 after:bottom-0 flex justify-center">What I Do</h2>
-                {/* <div className="flex md:flex-row flex-col  md:mx-32 mx-10 mb-32 place-items-center mt-20 md:mt-28"> */}
-                <div className="flex md:flex-row flex-col  md:mx-32 mx-10 mb-12 place-items-center">
-                    <div className="basis-2/3 md:pr-20">
-                    <div className="text-left">
-                        {/* <h2 className="sectionTitle mt-0 mb-2">What I Do</h2> */}
-                        {/* <p className="font-bold text-2xl mb-3 text-center">Project Impact</p> */}
+                <h2 className="sectionTitle mt-0 mt-20 flex justify-center">What I Do</h2>
+                    <div className="md:text-center md:mx-36 mx-10 mb-12">
                         <p>Using a blend of web technology and creative skills, I work to plan as well as efficiently develop web solutions that aid business outcomes by crafting functionally optimized applications ready for clients to use and providing engaging interactivity for users on the frontend. Through masterful problem-solving and a user-focused approach, I ensure the growth and impact of applications developed as I dedicate myself to the following areas:</p>
                     </div>
-                    </div>
-                    <div className="basis-1/2 order-first md:order-last h-full">
-                        <img src={webDevImage.src} className="max-w-44 max-h-44 md:max-h-64 md:max-w-64 mx-auto mb-10 md:mb-0"></img>
-                    </div>
-                </div>
-                {/* <p className="font-bold mx-32 text-2xl mb-10 text-center after:bg-black after:w-1/5 after:h-1 after:content-[''] after:absolute after:-bottom-2 after:left-0 after:right-0 after:mx-auto relative">Focus Areas</p> */}
-                <div className="flex lg:flex-row flex-col justify-around md:mx-24 mx-16">
+                <div className="flex lg:flex-row flex-col justify-around md:mx-32 mx-16">
                     <div className="cards lg:ml-5">
                         <img src={responsiveIcon.src} className="cardIcons"></img>
                         <h3 className="cardsInnerTitle">Responsive Design</h3>

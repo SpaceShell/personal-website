@@ -26,16 +26,16 @@
     @apply text-left mt-3 mx-2;
   }
   .skillsRow {
-    @apply flex flex-row justify-around mb-7 flex-wrap;
+    @apply flex flex-row flex-wrap justify-around mb-7 mx-10;
   }
   .skill {
-    @apply w-32 my-2 md:basis-1/6 basis-1/2 text-center;
+    @apply my-2 md:basis-1/6 basis-1/2 text-center border-4 border-neutral-400 rounded-3xl px-4 py-4 mt-3 mx-2 w-24 h-24 max-w-24 max-h-24 flex items-center;
+  }
+  .skillImage {
+    @apply mr-auto ml-auto min-w-10 min-h-10;
   }
   .sectionTitle {
-    @apply md:mt-16 mt-10 mb-6 text-[2.35rem] font-ExBoldsarabun text-red-800;
-  }
-  .skillText {
-    @apply font-bold min-w-fit w-2/3 mt-3 bg-amber-200 rounded-full ml-auto mr-auto px-4 mx-2;
+    @apply md:mt-16 mt-10 md:mt-28 mb-12 text-[2.35rem] font-ExBoldsarabun text-red-700 text-center relative after:content-[''] after:absolute after:w-48 after:h-1 after:bg-red-700 after:-bottom-3 flex justify-center;
   }
   .flowerAnims {
     @apply w-full h-32;
