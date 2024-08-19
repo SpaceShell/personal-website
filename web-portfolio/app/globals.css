@@ -41,10 +41,13 @@
     @apply w-full h-32;
   }
   .timelineContainer {
-    @apply absolute left-[25rem] top-5 after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white after:border-[5px] after:border-red-900 after:absolute after:-top-1 after:-left-[5.1rem] after:z-10;
+    @apply relative w-7/12 sm:w-9/12 md:w-[62%] left-[8rem] sm:left-[9rem] lg:left-[25rem] md:left-[19rem] after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white after:border-[5px] after:border-red-900 after:absolute after:-top-1 after:-left-[5.1rem] after:z-10;
   }
   .timelineText {
-    @apply mt-4 mr-36;
+    @apply mt-4 mr-4 lg:mr-36 md:mr-28 2xl:mr-0;
+  }
+  .timelineDate {
+    @apply absolute text-sm  md:text-xl text-red-900 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-28;
   }
   li {
     @apply ml-4;
