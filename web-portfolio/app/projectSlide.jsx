@@ -12,14 +12,14 @@ export default function ProjectSlide({
     const [clicked, setClicked] = useState(false);
     
     return (
-        <div className={" w-full max-w-lg h-full lg:mb-0 mb-8 " + addedClasses}>
-            <div style={{'--projImage': `url(${projImage.src})`}} className={"bg-[image:var(--projImage)] bg-[length:115%] hover:bg-[length:135%] bg-center bg-no-repeat transition-all duration-300 ease-out h-44 w-full rounded-t-xl"}></div>
+        <div className={"border-4 border-red-700 rounded-2xl w-full max-w-lg h-full lg:mb-0 mb-8 " + addedClasses}>
+            <div style={{'--projImage': `url(${projImage.src})`}} className={"bg-[image:var(--projImage)] bg-[length:116%] hover:bg-[length:135%] bg-center bg-no-repeat transition-all duration-300 ease-out h-44 w-full rounded-t-xl"}></div>
             <Disclosure as="div" defaultOpen={false}>
-                <DisclosureButton className='group rounded-b-xl flex flex-col w-full items-center justify-between pt-6 bg-gray-100' onClick={() => setClicked(!clicked)}>
+                <DisclosureButton className='group rounded-b-xl flex flex-col w-full items-center justify-between pt-6' onClick={() => setClicked(!clicked)}>
                     <h3 className="font-bold text-xl mb-4 text-center">{title}</h3>
                     <ChevronDownIcon className="size-5 fill-gray-800 group-data-[hover]:fill-gray-800/50 group-data-[open]:rotate-180 z-10 mb-3"/>
                 </DisclosureButton>
-                <DisclosurePanel transition className={`${clicked ? "panelAppear" : "panelDisappear"} -translate-y-2 text-sm/5 px-6 rounded-b-xl origin-top transition-all duration-1000 ease-out max-h-screen overflow-hidden bg-gray-100 data-[closed]:max-h-0`}>
+                <DisclosurePanel transition className={`${clicked ? "panelAppear" : "panelDisappear"} -translate-y-2 text-sm/5 px-6 rounded-b-xl origin-top transition-all duration-1000 ease-out max-h-screen overflow-hidden data-[closed]:max-h-0`}>
                     <h4 className="mt-2">Info:</h4>
                     <p className="mb-4">{description}</p>
                     <h4>Top Technologies <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 inline-block mb-1">
