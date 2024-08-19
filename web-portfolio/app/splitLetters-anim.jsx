@@ -85,7 +85,7 @@ export default function Header() {
     }
 
     return(
-        <h1 className={"font-ExBoldsarabun md:mt-28 mt-16 text-6xl font-black z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
+        <h1 className={"font-soraExBold tracking-tight md:mt-28 mt-16 text-6xl z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
             <SplitText str={"Hello, I'm Steve Luis!"} hover={hover} setHover={setHover} introEnded={introEnded} setIntroEnded={setIntroEnded}/>
         </h1>
     )

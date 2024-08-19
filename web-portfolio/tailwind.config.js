@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         ExBoldsarabun: ['var(--font-sarabunExtrabold)'],
+        soraExBold: ['var(--font-soraExBold)']
       },
     },
   },

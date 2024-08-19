@@ -1,6 +1,6 @@
 //HTML Root Layout
 
-import { Vazirmatn, Sarabun } from 'next/font/google';
+import { Vazirmatn, Sarabun, Sora } from 'next/font/google';
 import "./globals.css";
 
 const vazirmatn = Vazirmatn({ 
@@ -14,10 +14,10 @@ const sarabunExtrabold = Sarabun({
   variable: '--font-sarabunExtrabold',
 })
 
-const sarabun = Sarabun({ 
+const soraExBold = Sora({ 
   subsets: ['latin'], 
-  weight: ['400'],
-  variable: '--font-sarabunExtrabold',
+  weight: ['800'],
+  variable: '--font-soraExBold',
 })
 
 export const metadata = {
@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="!scroll-smooth" lang="en">
-      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable}`}>{children}</body>
+      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable}`}>{children}</body>
     </html>
   );
 }

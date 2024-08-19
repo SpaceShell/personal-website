@@ -26,10 +26,10 @@
     @apply text-left mt-3 mx-2;
   }
   .skillsRow {
-    @apply flex flex-row flex-wrap justify-around mb-7 mx-10;
+    @apply flex flex-row flex-wrap motion-reduce:md:flex-nowrap justify-between motion-reduce:justify-center mb-7 md:mx-0 mx-10 mt-2;
   }
   .skill {
-    @apply my-2 md:basis-1/6 basis-1/2 text-center border-4 border-neutral-400 rounded-3xl px-4 py-4 mt-3 mx-2 w-24 h-24 max-w-24 max-h-24 flex items-center;
+    @apply my-2 border-8 border-transparent rounded-3xl px-4 py-4 mt-3 mx-6 motion-reduce:lg:mx-6 motion-reduce:md:mx-auto min-w-24 w-24 h-24 max-w-24 max-h-24 flex items-center relative justify-center bg-white;
   }
   .skillImage {
     @apply mr-auto ml-auto min-w-10 min-h-10;
@@ -174,55 +174,87 @@
   background-position: 100% 100%;
 }
 
-.shineAnim {
-  animation: grow 1.5s ease-out forwards;
+.scroller {
+  max-width: 55rem;
 }
 
-@keyframes grow {
-  0% {scale: 0;}
-  50% {scale: 1.3;}
-  100% {scale: 1;}
+.scroll_inner {
+  max-width: 55rem; 
 }
 
-.shineCutouts {
-  height: 51%;
-  width: 51%;
-  background-color: white;
+.skill::before,
+.skill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 237, 71),
+    hsla(339, 100%, 55%, 1)
+  );
+  background-size: 100%;
+  z-index: -1;
+  width: 100%;
+  border-radius: 20px;
+  transform: scale(1.3);
 }
 
-#HFHH {
-  background-image: url(../public/HomeForHealthyHabits.png);
-  background-size: 105%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: all 0.3s ease-out;
+.skill::after {
+  filter: blur(15px);
+  transform: translate3d(0, 0, 0);
 }
 
-#HFHH:hover {
-  background-size: 130%;
+.organized::before,
+.organized::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 237, 71),
+    hsla(339, 100%, 55%, 1)
+  );
+  background-size: 100%;
+  z-index: -1;
+  width: 100%;
+  border-radius: 20px;
+  transform: scale(1.3);
 }
 
-.scroll-wrapper {
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.header-bg {
-  top: var(--top);
-  left: var(--left);
-  animation: moveX 6s linear infinite;
-}
-
-.header-bg-dupl {
-  top: var(--top);
-  left: calc(var(--left) + 100vw);
-  will-change: transform;
-  animation: moveX 6s linear infinite;
+.organized::after {
+  filter: blur(15px);
+  transform: translate3d(0, 0, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .scroll_inner {
+    animation: moveX 18s linear infinite;
+    width: max-content;
+    max-width: none;
+    animation-play-state: running;
+    animation-direction: var(--direction);
+  }
+
+  .scroll_inner:hover {
+    animation-play-state: paused;
+  }
+
+  .scroller {
+    max-width: 55rem;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    overflow: hidden;
+  }
+
   @keyframes moveX {
-    0% {transform: translate(0vw);}
-    100% {transform: translate(-100vw);}
+    0% {transform: translate(0%);}
+    100% {transform: translate(-50%);}
   }
 
   @keyframes rotateX {

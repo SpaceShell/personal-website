@@ -1,9 +1,9 @@
 "use client"
 
 import React from "react";
-import healthyWeb from '../public/HomeForHealthyHabits.png';
-import pokeWeb from '../public/AshantiPokeWeb.png';
-import dataScience from '../public/DataScience.png';
+import healthyWeb from '../public/HomeForHealthyHabits.jpg';
+import pokeWeb from '../public/AshantiPokeWeb.jpg';
+import dataScience from '../public/DataScience.jpg';
 import ProjectSlide from './projectSlide'
 
 export default function Projects() {
