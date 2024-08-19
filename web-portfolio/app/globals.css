@@ -40,6 +40,9 @@
   .flowerAnims {
     @apply w-full h-32;
   }
+  .timelineContainer {
+    @apply absolute left-[25rem] top-5 after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white after:border-[5px] after:border-red-900 after:absolute after:bottom-40 after:-left-[5.1rem] after:z-10;
+  }
   li {
     @apply ml-4;
   }
@@ -142,10 +145,6 @@
   transform-style: preserve-3d;
   position: relative;
   animation: rotateX 15s 8.5s infinite;
-}
-
-.container-3d {
-  perspective: 1000px;
 }
 
 #face1 {
@@ -267,3 +266,4 @@
     100% {transform: rotateX(360deg) translateZ(0);}
   }
 }
+

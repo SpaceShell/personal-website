@@ -21,7 +21,7 @@ export default function Header() {
             <SideConnect />
             <img src={topLight.src} className="absolute h-72 w-72 -top-20 right-0 z-10"/>
             <div className="relative grow mx-6 md:mx-none lg:ml-40 md:ml-24">
-                <div className="flex flex-row md:mt-[4.5rem] mt-7 headerText">
+                <div className="flex flex-row md:mt-[4.5rem] mt-10 headerText">
                     <MdOutlineLocationOn className="size-6 fill-black"/>
                     <p className="ml-1 mt-0.5">United States, California</p>
                 </div>
