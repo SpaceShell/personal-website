@@ -8,7 +8,7 @@ import ProjectSlide from './projectSlide'
 
 export default function Projects() {
     return (
-        <section className="py-4 mb-10">
+        <section id="portfolio" className="py-4 mb-28">
             <div className="md:mx-32 mx-10">
                 <h2 className="sectionTitle">My Projects</h2>
                 <div className="flex lg:flex-row flex-col justify-around">

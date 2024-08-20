@@ -19,7 +19,7 @@ const skillsTR = [
         link: "https://commons.wikimedia.org/wiki/File:CSS3_logo.svg", 
         src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/512px-CSS3_logo.svg.png?20210705212817", 
         alt: "CSS logo", 
-        title: "daPhyre (File:CSS3 and HTML5 logos and wordmarks.svg) Elfi (File:CSS3 logo and wordmark.svg) ExE Boss, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons", 
+        title: "CSS - Image credit: daPhyre (File:CSS3 and HTML5 logos and wordmarks.svg) Elfi (File:CSS3 logo and wordmark.svg) ExE Boss, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons", 
         className: "skillImage"
     },
     {
@@ -40,15 +40,15 @@ const skillsTR = [
         link: "https://commons.wikimedia.org/wiki/File:JavaScript-logo.png", 
         src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/512px-JavaScript-logo.png?20120221235433", 
         alt: "Javascript logo", 
-        title: "Christopher Williams, Public domain, via Wikimedia Commons", 
+        title: "Javascript - Image credit: Christopher Williams, Public domain, via Wikimedia Commons", 
         className: "skillImage"
     },
     {
         link: "https://commons.wikimedia.org/wiki/File:JQuery-Logo.svg", 
         src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/512px-JQuery-Logo.svg.png?20200715135602", 
         alt: "JQuery logo", 
-        title: "Christopher Williams, Public domain, via Wikimedia Commons", 
-        className: "skillImage min-w-4 min-h-4"
+        title: "jQuery - Image credit: Christopher Williams, Public domain, via Wikimedia Commons", 
+        className: "skillImage min-w-1 min-h-1"
     }
 ];
 
@@ -63,8 +63,8 @@ const skillsBR = [
     {
         link: "https://nextjs.org/", 
         src: NextWordmark.src, 
-        alt: "Next JS logo", 
-        title: "Next JS", 
+        alt: "Next.js logo", 
+        title: "Next.js", 
         className: "skillImage"
     },
     {
