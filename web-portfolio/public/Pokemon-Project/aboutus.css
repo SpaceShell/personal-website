@@ -1,0 +1,156 @@
+.header-image {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 65vh;
+  width: 100%;
+  position: relative;
+}
+
+.header-image::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-text {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header-text h2 {
+  font-size: 28px;
+  font-family: 'YourFontName', sans-serif; 
+  margin-bottom: 20px;
+}
+
+.header-text p {
+  font-size: 18px;
+  font-family: 'YourFontName', sans-serif; /* Replace 'YourFontName' */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+.navbar {
+  background-color: #FF0000
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #ffc7c7;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+  font-weight: 900;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.homeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#brandTextPoke {
+  color: #903131;
+}
+
+#brandTextWeb {
+  color: #ffed7a;
+}
+
+#logo {
+  height: 30px;
+  max-width: 30px;
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#searchButtonText {
+  all: unset;
+}
+
+.header {
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5) url(pokestore.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-bottom: 100px;
+}
+
+.header h1 {
+  color: red;
+}
+
+#demo {
+  color: white;
+  font-style: italic;
+}
+
+.header h3 {
+  color: red;
+}
+
+.alert {
+  border-color: yellow;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  border-width: 10px;
+}
+
+#pokeHistory {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#pokemonGen1List {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+}
+
+#listPages {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+
+#listPages p {
+  cursor: pointer;
+}
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <!-- BootStrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Your CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+
+
+
+
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/pokemon-icon.png">Ashanti's
+        <span id="brandTextPoke">Poke</span><span id="brandTextWeb">Web</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pokemon.html">PokeSearch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">PokeStore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactPage.html">Contact Me!<3</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <input class="form-control me-2 pokemonQuick" placeholder="Quick Search Pokemon" aria-label="Search">
+          <button class="btn btn-outline-light" onclick="quickSearch()"><a id="searchButtonText"
+              href="pokemon.html">Search</a></button>
+        </div>
+            </div>
+    </div>
+  </nav>
+  <!--Navbar-->
+
+
+
+
+  <!--header section-->
+
+  <header class="header" class='d-flex align-items-center justify-content-center'>
+    <div class="container">
+      <button class="alert" onclick="myFunction()">Sign Up for Weekly Specials Updates HERE!</button>
+      <p id="demo"></p>
+
+      <h1>Welcome to Ashanti's PokeStore</h1>
+      <h3>Ashanti sells Pokemon cards, Pokemon merch, and much more!!</h3>
+
+    </div>
+  </header>
+  <!--header section END-->
+<main>
+  <!--Recent Purchases-->
+
+  <div class="scroll-container">
+   <h2>Recent Purchases</h2>
+    <img src="https://m.media-amazon.com/images/I/A1lyLTbTBjL._AC_SX425_.jpg" alt="Deck" width="300" height="300">
+    <img src="https://i.ebayimg.com/images/g/ayIAAOSwx75kSSmE/s-l1200.webp" alt="pikachu-t-shirt" width="300" height="300">
+    <img src="https://teenavi.com/wp-content/uploads/2019/03/Pok%C3%A9mon-Detective-Pikachu-Mug.jpg" alt="pikachu coffee mug" width="300" height="300">
+   <img src="https://m.media-amazon.com/images/I/71thFurPiLL._AC_UL320_.jpg" alt="Charizard" width="300" height="300">
+    <img src="https://m.media-amazon.com/images/I/71Q0ssjZD7L._AC_UL320_.jpg" alt="Keychains " width="300" height="300">
+    <img src="https://m.media-amazon.com/images/I/61Lq4KlU66L._AC_UL320_.jpg" alt="Plushies" width="300" height="300">
+  </div>
+
+  <!--Recent Purchases-->
+
+  <!--Item Purchase START-->
+   <div class="small-container">
+     <h2>Feautured Merch</h2>
+     <div class="row">
+     <div class="col-4">
+       <img class="T-shirt" src="https://ae01.alicdn.com/kf/H31f14409ba6a440da40e87ee44770a84y/NO-COFFEE-NO-WORKEE-T-Shirt-PIKACHU-POKEMON-pika-Tshirt-O-Neck-Short-Funny-Mens-Shirts.jpg_640x640q80.jpg.webp?1000" height="250" width="200">
+       <h4>Pikachu T-Shirt</h4>
+       <p>$13.00</p>
+     <p>Dress to express your mood with this pickachu T-Shirt!!</p> </div>
+   
+     <div class="col-4">
+        <img src="https://kawaiimerch.com/wp-content/uploads/2020/08/51138-23bb41-640x640.jpeg?1000" height="250" width="200">
+        <h4>Pikachu Hoodies</h4>
+        <p>$20.00 - $25.00</p>
+        <p>Show everyone who's your favorite Pokemon!!</p>
+      </div>
+     <div class="col-4">
+        <img src="https://target.scene7.com/is/image/Target/GUEST_e8899500-67ca-46d8-bcb7-ef8e30fbd2de?wid=800&hei=800&qlt=80&fmt=webp" height="250" width="200">
+        <h4>Pikachu Pj's</h4>
+        <p>$13.00</p>
+        <p>Go to bed cozy and warm with pikachu!</p>
+      </div>
+     </div> 
+
+     
+    
+
+    <!--Item Purchase START-->
+</main>
+    <!--Footer Section START-->
+    <footer class="footer-2">
+    <div class="left-area">
+      <h2>Contact</h2>
+      <ul class="box">
+        <li>333 S Grand Ave</li>     
+        <li>242-512-2695</li>
+        <li>Ashantiservice@gmail.com</li>
+      </ul>
+    </div>
+      <ul class="right-area">
+        <li class="link-area">
+          <h2>Useful Links</h2>
+          <ul class="box h-box">
+            <li> <a href="#">Home</a></li>     
+            <li> <a href="#">Contact</a></li>
+            <li> <a href="#">Store</a></li>
+            <li> <a href="#">Pokesearch</a></li>
+            <li> <a href="#">About </a></li>
+          </ul>
+        </li>
+        <div class="right-area">
+        <li class="link-area">
+        <ul class="box h-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.626449611506!2d-118.18126679999997!3d34.0534521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c5929a286347%3A0x9c5733da7294a1fe!2s4202%20Dwiggins%20St%2C%20Los%20Angeles%2C%20CA%2090063!5e0!3m2!1ses-419!2sus!4v1699341000364!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </ul>
+    </li>
+  </div>  
+      </ul>
+      <div class="footer-bottom">
+        <p>All Right reserved by &copy;Ashanti-2023</p>
+      </div>
+    </footer>
+  
+    <!--Footer Section End-->
+
+
+    <!-- BootStrap JavaSript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!-- jQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Your JavaScript -->
+    <script src="script.js"></script>
+    <script src="pokemon.js"></script>   
+  
+</body>
+</html>

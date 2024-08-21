@@ -1,0 +1,352 @@
+.navbar {
+  background-color: #FF0000
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #ffc7c7;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  font-weight: 900;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#brandTextPoke {
+  color: #903131;
+}
+
+#brandTextWeb {
+  color: #ffed7a;
+}
+
+#logo {
+  height: 30px;
+  max-width: 30px;
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#searchButtonText {
+  all: unset;
+}
+
+header {
+  background-image: url("https://pbs.twimg.com/media/D1p1aSkU4AApCG5.jpg");
+  background-size: cover;
+  background-position-y: 120%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+#headerText {
+  font-size: 50px;
+  color: #ffffff;
+  opacity: 88%;
+}
+
+.pokeSearch,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 15px;
+}
+
+#searchInput {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#pokeImages {
+  display: inline-block;
+}
+
+#pokemonInfo {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#otherInfo {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#typeSymbol {
+  height: 22px;
+  width: 22px;
+  display: inline-flex;
+  position: relative;
+  top: -1px;
+}
+
+.fi-xwsuxx-reload {
+  cursor: pointer;
+}
+
+#recommendPokemonWhole,
+#guessingPoke {
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#carousel {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.randomPokemonImages {
+  margin-bottom: 40px;
+  height: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.randomPokemonImages:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0.7) grayscale(1);
+}
+
+.carousel-control-next {
+  text-align: left;
+  float: left;
+  right: -5.5%;
+}
+
+.carousel-control-prev {
+  text-align: right;
+  float: right;
+  left: -5.5%;
+}
+
+#guessPokeImage {
+  filter: brightness(0%);
+  height: 200px;
+}
+
+#guessPokeImage,
+#guessingButtons {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#confetti {
+  background-image: url("");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 170px;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.confettiAppear {
+  animation: fallSmooth 2.5s forwards;
+}
+
+@keyframes fallSmooth {
+  0% {
+    height: 0px;
+    opacity: 100%
+  }
+
+  20% {
+    height: 170px;
+    opacity: 100%
+  }
+
+  70% {
+    height: 170px;
+    opacity: 100%
+  }
+
+  100% {
+    height: 170px;
+    opacity: 0%
+  }
+}
+
+.guessButton {
+  background-color: #8ac6ff;
+  border-color: #419ce1;
+  color: white;
+  border-radius: 2px;
+  border-width: 0px 2px 0.5px;
+  box-shadow: inset 0px 0px #2c7dc9, 0px 6px #2c7dc9;
+  position: relative;
+  top: -2px;
+  transition: all 50ms linear;
+}
+
+.guessButton:hover {
+  box-shadow: inset 0px 0px #2c7dc9, 0px 6px 1px #2c7dc9;
+}
+
+.guessButton:active,
+.guessButton:active:hover {
+  box-shadow: inset 0px 3px #2c7dc9, 0px 1px 1.7px #2c7dc9;
+  border-bottom: 0px;
+  top: 5px;
+}
+
+.guessButton:hover,
+.guessButton:active,
+.guessButton:active:hover,
+.guessButton:active:focus {
+  background-color: #609bfb;
+  border-color: #2379a4;
+  color: white;
+}
+
+.wrongButton {
+  background-color: red;
+  border-color: #ad0101;
+  border-width: 0px 2px 0.5px;
+  color: white;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px #be0e0e, 0px 6px #be0e0e;
+  transition: all 50ms linear;
+  top: -2px;
+  position: relative;
+}
+
+.wrongButton:hover {
+  box-shadow: inset 0px 0px #be0e0e, 0px 6px 1px #be0e0e;
+}
+
+.wrongButton:active,
+.wrongButton:active:hover {
+  box-shadow: inset 0px 3px #be0e0e, 0px 1px 1.7px #be0e0e;
+  top: 5px;
+  border-width: 0px 2px 0.5px;
+}
+
+.wrongButton:hover,
+.wrongButton:active,
+.wrongButton:active:hover,
+.wrongButton:active:focus {
+  background-color: #e82626;
+  border-color: #a00d0d;
+  color: white;
+}
+
+.rightButton {
+  background-color: #3fe86f;
+  border-color: #37c913;
+  color: white;
+  border-width: 0px 2px 0.5px;
+  border-radius: 2px;
+  top: -2px;
+  position: relative;
+  box-shadow: inset 0px 0px #1abd48, 0px 6px #1abd48;
+  transition: all 50ms linear;
+}
+
+.rightButton:hover {
+  box-shadow: inset 0px 0px #1abd48, 0px 6px 1px #1abd48;
+}
+
+.rightButton:active,
+.rightButton:active:hover {
+  box-shadow: inset 0px 3px #1abd48, 0px 1px 1.7px #1abd48;
+  top: 5px;
+  border-width: 0px 2px 0.5px;
+}
+
+.rightButton:hover,
+.rightButton:active,
+.rightButton:active:focus,
+.rightButton:active:hover {
+  background-color: #06db42;
+  border-color: #34a518;
+  color: white;
+}
+
+.correctGuessImage {
+  filter: brightness(100%);
+  animation: cuteHop 1s 0.4s ease-in-out;
+  position: relative;
+}
+
+@keyframes cuteHop {
+  0% {
+    top: 0px;
+  }
+
+  20% {
+    top: -10px;
+  }
+
+  40% {
+    top: 0px;
+  }
+
+  60% {
+    top: -10px;
+  }
+
+  80% {
+    top: 0px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #04ee82;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.5s linear infinite;
+
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+  top: 25%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

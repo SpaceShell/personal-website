@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About Us!</title>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+  <!-- Your CSS -->
+  <link href="aboutus.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=YourFontName&display=swap" rel="stylesheet">
+
+</head>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/pokemon-icon.png">Nighthawk's
+        <span id="brandTextPoke">Cr</span><span id="brandTextWeb">Web</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pokemon.html">PokeSearch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">PokeStore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactPage.html">Contact Me!<3</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <input class="form-control me-2 pokemonQuick" placeholder="Quick Search Pokemon" aria-label="Search">
+          <button class="btn btn-outline-light" onclick="quickSearch()"><a id="searchButtonText"
+              href="pokemon.html">Search</a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- header -->
+
+
+  <header class="header-image" style="position: relative;">
+    <div
+      style="background-image: url('https://media2.giphy.com/media/NS7gPxeumewkWDOIxi/giphy.gif?cid=ecf05e47rjwszpo3grr6exhmo7x4ydngsel43vwggwbg7rl3&ep=v1_gifs_search&rid=giphy.gif&ct=g'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; height: 65vh; width: 100%; position: relative;">
+    </div>
+    <div class="container"
+      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; z-index: 1;">
+      <h2 class="header-text">What is this website about?</h2>
+      <p class="header-text">I tend to talk a lot about Pokémon. I ramble on about it so much to my friends. But, Not
+        many of them know much about every Pokémon so this cool little website helps with that!</p>
+    </div>
+  </header>
+
+
+
+
+
+
+
+  <!-- Section Describing Pokemon -->
+  <section class="what-is-a-pokemon py-5" style="background-color: #f7f7f7;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-title">Alright, but what is a Pokémon?</h2>
+          <p class="section-text">A Pokémon is a creature that has a Pokédex number. Each Pokémon has a Pokédex number,
+            which is a number that identifies them. Pokemon are known by many, and there's a diverse range of them. This
+            website hopefully provides that clarification for newcomers!</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://www.freepnglogos.com/uploads/pokeball-png/pokeball-icon-download-icons-32.png" height="100"
+            width="100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="button-section py-5" style="background-color: #f7f7f7;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="store.html" class="btn btn-danger btn-lg">Visit the PokeStore</a>
+        </div>
+        <div class="col-md-6">
+          <a href="pokemon.html" class="btn btn-danger btn-lg">Search for Pokémon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section with Ashanti's Favorite Pokemon -->
+  <section class="favorite-pokemon py-5" style="background-color: #e6e6e6;">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">My Personal Favorite Pokémon</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+              alt="Favorite Pokemon 1" height="300" width="300"'> 
+            <h3>Eevee!</h3>
+            <p>Eevee was my first favorite character since I started playing pokemon!.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png"    alt="Favorite Pokemon 2" height="300" width="300">
+            <h3>Pichu!</h3>
+            <p>Its like a baby version of Pikachu!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History of Pokemon Section -->
+  <section id="pokeHistory">
+    <h3>The Early History of Pokemon</h3>
+    <p> All pokemon from Generation 1</p>
+    <ol id="pokemonGen1List"></ol>
+    <div id="listPages">
+      <p onclick="pokeList(0)">&lt;  1 </p>
+      <p onclick="pokeList(20)"> 2 </p>
+      <p onclick="pokeList(40)"> 3 </p>
+      <p onclick="pokeList(60)"> 4 </p>
+      <p onclick="pokeList(80)"> 5 </p>
+      <p onclick="pokeList(100)"> 6 </p>
+      <p onclick="pokeList(120)"> 7 </p>
+      <p onclick="pokeList(140)"> 8  &gt;</p>
+    </div>
+  </section>
+  
+  <!--Footer Section START-->
+  <footer class="text-center text-white" style="background-color: red">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-bold">
+              <a class="text-white">About Me:</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <class="text-white">Locate Me at- 4202 Dwiggins St, 90002 CA</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <class="text-white">Call Me: 1+(248)-104-2408</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class=" font-weight-bold">
+  <class="text-white">Send me an email- (Even if You just want to say Hi!) ashanti' service@gmail.com</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.626449611506!2d-118.18126679999997!3d34.0534521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c5929a286347%3A0x9c5733da7294a1fe!2s4202%20Dwiggins%20St%2C%20Los%20Angeles%2C%20CA%2090063!5e0!3m2!1ses-419!2sus!4v1699341000364!5m2!1ses-419!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <!-- Grid row-->
+  </section>
+  <!-- Section: Links -->
+
+  <hr class="my-5" />
+
+  <!-- Section: Text -->
+  <section class="mb-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-8">
+
+      </div>
+    </div>
+  </section>
+  <!-- Section: Text -->
+
+
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+
+    </footer>
+    <!--Footer Section End-->
+
+
+
+
+
+    <!-- Bootstrap JavaScript and Your JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="pokemon.js"></script>
+    <script src="aboutus.js"></script>
+</body>
+
+</html>

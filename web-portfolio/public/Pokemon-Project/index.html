@@ -1,0 +1,196 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PokeWeb Home</title>
+
+  <!-- BootStrap CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Your CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navbar-->  
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/pokemon-icon.png">Ashanti's <span id="brandTextPoke">Poke</span><span id="brandTextWeb">Web</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pokemon.html">PokeSearch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">PokeStore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactPage.html">Contact Me!<3</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <input class="form-control me-2 pokemonQuick" placeholder="Quick Search Pokemon" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit" onclick="quickSearch()"><a id="searchButtonText" href="pokemon.html">Search</a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar-->
+
+  <!-- carousel -->
+  <div class="contain">
+   <div class="carousel">
+     <div class="slider">
+       <section class="secOne"> <p>Welcome to Ashanti's PokéWeb!</p> </section>
+       <section class="secTwo"> <p>The PokéWeb contains all the information needed in order to have a general understanding of just what Pokémon is!</p> </section>
+       <section class="secThree"> <p>Want to see some Pokémon or look up a fave? Then head on over to the PokéSearch!</p> </section>
+       <section class="secFour"> <p>And if you'd like to buy some Pokémon merch then you should stop by the PokéStore! </p> </section>
+     </div>
+     <div class="controls">
+       <span class="arrow left"><span class="material-icons">
+       chevron_left
+       </span></span>
+       <span class="arrow right"><span class="material-icons">
+       navigate_next
+       </span></span>
+       <ul>
+         <li class="selected"></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </div>
+     </div>
+   </div>
+  <!-- carousel -->
+
+  <!--Resources START-->
+  <div class="row text-center">
+      <h1 class="rHead">External Resources</h1>
+      <p class="rHead">If you would like to learn or engage more with the Pokémon franchise, here are some sites you can use!</p>
+
+      <div class="col-md-3 mx-auto">
+          <img class="icons" src="https://pbs.twimg.com/profile_images/1409773636970450954/UltUJdMr_400x400.png">
+          <h2>Bulbapedia</h2>
+          <p>The unofficial encyclopedia for all things Pokémon. This site is run by fans and contains 51,508 articles on various Pokémon topics. </p>
+          <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" class="btn btn-success btn-md">Delve into Bulbapedia</a>
+      </div>
+
+      <div class="col-md-3 mx-auto">
+          <img class="icons" src="https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg">
+          <h2>Pokémon.com</h2>
+          <p>The official Pokémon website is home to news on in-game/person events, games, cards, anime, and much more.</p>
+          <a href="https://www.pokemon.com/us" class="btn btn-secondary btn-md">Head to the official site</a>
+      </div>
+
+      <div class="col-md-3 mx-auto">
+          <img class="icons" src="https://i.pinimg.com/originals/6a/28/0d/6a280de1554a66e8ddc2c80b2df3b598.png">
+          <h2>Pokémon Center</h2>
+          <p>The official merch store for Pokémon. There you can buy officially licensed merchandise including but not limited to: cards, plushies, clothes, and figurines. </p>
+          <a href="https://www.pokemoncenter.com/" class="btn btn-danger btn-md">Go to the PokéCenter</a>
+      </div>
+  </div>
+
+  <!--Resources END-->
+
+  <!--Footer Section START-->
+  <footer class="text-center text-white" style="background-color: red">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-bold">
+              <a class="text-white">About Me:</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <class="text-white">Locate Me at- 4202 Dwiggins St, 90002 CA</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <class="text-white">Call Me: 1+(248)-104-2408</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class=" font-weight-bold">
+  <class="text-white">Send me an email- (Even if You just want to say Hi!) ashanti'service@gmail.com</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.626449611506!2d-118.18126679999997!3d34.0534521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c5929a286347%3A0x9c5733da7294a1fe!2s4202%20Dwiggins%20St%2C%20Los%20Angeles%2C%20CA%2090063!5e0!3m2!1ses-419!2sus!4v1699341000364!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+
+</div>
+    <!-- Copyright -->
+  <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+
+  </footer>
+          <!--Footer Section End-->
+
+  <!-- BootStrap JavaSript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  
+  <!-- Your JavaScript -->
+  <script src="script.js"></script>
+  <script src="pokemon.js"></script>
+
+</body>
+
+</html>

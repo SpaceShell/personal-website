@@ -1,0 +1,381 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nav-link {
+  opacity: 0.85;
+  color: white !important;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  background-color: forestgreen !important;
+}
+
+.navbar {
+  background-color: #65d765 !important;
+}
+
+.navbar-brand {
+  color: #f5fffb !important;
+}
+
+header {
+  /* sizing of the element */
+  height: 600px;
+  width: 100%;
+
+  /* set and adjust background image*/
+  /* background-image: url("https://foodtank.com/wp-content/uploads/2020/05/FoodTank_MediterraneanDietMonth.jpg");
+  background-size: cover; */
+
+  /* center the text */
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.headerVid {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  animation: appearOnLoad 2s 1;
+}
+
+@keyframes appearOnLoad {
+  0% {opacity: 0;}
+  100% {opacity: 0.9;}
+}
+
+header h1 {
+  color: white;
+  font-size: 90px;
+  -webkit-text-stroke: #787878 2px;
+}
+
+header p {
+  color: white;
+  font-style: italic;
+}
+
+h3 {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 70px;
+}
+
+.logo {
+  height: 37px;
+  width: 37px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.services {
+  text-align: center;
+}
+
+.services i {
+  /* Adjust the size and position of the icon */
+  font-size: 24px;
+  padding: 10px 10px;
+  /* Color changes the color of the icon */
+  color: #fff;
+  background-color: seagreen;
+  /* Resize the container the icon is in */
+  width: 80px;
+  height: 80px;
+  /* Changes the roundness of the container */
+  border-radius: 50%;
+}
+
+.services span {
+  width: 250px;
+  height: 40px;
+  display: inline-block;
+}
+
+.team img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 10px;
+  transition: height 0.5s, width 0.5s;
+}
+
+.team {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Team image borders and grow transition for hover */
+.markImage {
+  border: 2px solid blueviolet;
+}
+
+.josephineImage {
+  border: 2px solid mediumvioletred;
+}
+
+.linusImage {
+  border: 2px solid darkgoldenrod;
+}
+
+.tinaImage {
+  border: 2px solid cornflowerblue; 
+}
+
+.team img:hover {
+  height: 90px;
+  width: 90px;
+}
+
+/* Bio background transition for hover */
+.teamBio {
+  transition: background-color 0.5s;
+}
+
+.teamBio:hover {
+  background-color: #e0e0e0;
+}
+
+.contact .row {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contact .input-group {
+  margin-bottom: 6px;
+}
+
+.contact i {
+  padding: 12px
+}
+
+.contact .btn {
+  width: 100%;
+  color: white;
+  background-color: mediumvioletred;
+}
+
+.contact .btn:hover {
+  background-color: #a4136f;
+}
+
+.contact .btn:focus, .btn:active {
+  box-shadow: 0 0 0 0.2rem rgba(223, 127, 225, 0.6) !important;
+}
+
+.cause {
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.causeFacts {
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.causeSubTitle {
+  font-weight: bold;
+}
+
+.causeSubSpace {
+  padding-top: 30px;
+}
+
+.foodInsecurityChartOne {
+  height: 270px;
+  width: 340px;
+}
+
+.foodInsecurityChartTwo {
+  height: 240px;
+  width: 300px;
+}
+
+.cause a {
+  text-decoration: none !important;
+}
+
+.hideOne {
+  font-size: 0;
+  opacity: 0;
+}
+
+.foodInsecurityChartOne:hover ~ .hideOne {
+  color: grey;
+  animation: citeAppear 0.7s forwards;
+}
+
+@keyframes citeAppear {
+  0% {opacity: 0; font-size: 0px;}
+  100% {opacity: 1; font-size: 20px;}
+}
+
+.foodInsecurityChartOne:not(:hover) ~ .hideOne {
+  color: grey;
+  animation: citeDisppear 0.7s forwards;
+}
+
+@keyframes citeDisppear {
+  0% {opacity: 1; font-size: 20px;}
+  100% {opacity: 0; font-size: 0px;}
+}
+
+.hideTwo {
+  font-size: 0;
+  opacity: 0;
+  margin-top: 8px;
+}
+
+.foodInsecurityChartTwo:hover ~ .hideTwo {
+  color: grey;
+  animation: citeAppear 0.7s forwards;
+}
+
+.foodInsecurityChartTwo:not(:hover) ~ .hideTwo {
+  color: grey;
+  animation: citeDisppear 0.7s forwards;
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: forestgreen;
+  background-size: cover;
+  color: white;
+}
+
+footer .row {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+footer h5 {
+  margin-top: 22px;
+}
+
+footer p {
+  font-size: 15px;
+  display: inline;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer .btn {
+  background-color: mediumseagreen !important;
+  color: white;
+  border: none !important;
+  outline-color: none;
+}
+
+footer .btn:hover {
+  background-color: #78c49a !important;
+}
+
+footer .btn:focus, .btn:active {
+  box-shadow: 0 0 0 0.2rem rgba(93, 208, 93, 0.6) !important;
+}
+
+.iconSocial {
+  margin-bottom: 10px;
+}
+
+footer .input-group {
+  margin-bottom: 20px;
+}
+
+.footerWeb {
+  color: white;
+  text-decoration: underline;
+}
+
+.footerWeb:hover {
+  color: #e6e6e6;
+}
+
+.logoAboutUs {
+  width: 200px;
+  height: 200px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.servicesList {
+  margin-left: 5%;
+}
+
+.aboutImages {
+  margin-top: 15px;
+  border: 2px green solid;
+  height: 170px;
+  width: 300px;
+  margin-left: 25px;
+}
+
+.servicesImages {
+  width: 800px;
+  height: 520px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.servicesOffered span {
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+}
+
+.servicesOffered i {
+  /* Adjust the size and position of the icon */
+  font-size: 45px;
+  padding: 12px 16px;
+  /* Color changes the color of the icon */
+  color: #fff;
+  background-color: seagreen;
+  /* Resize the container the icon is in */
+  width: 100px;
+  height: 130px;
+  /* Changes the roundness of the container */
+  border-radius: 50%;
+  display: inline;
+}
+
+.servicesOffered image {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 75%;
+}

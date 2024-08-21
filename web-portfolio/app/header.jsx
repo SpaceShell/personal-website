@@ -21,7 +21,7 @@ export default function Header() {
             <SideConnect />
             <img src={topLight.src} className="absolute h-72 w-72 -top-20 right-0 z-10"/>
             <div className="relative grow mx-6 md:mx-none lg:ml-40 md:ml-24">
-                <div className="flex flex-row md:mt-[4.5rem] mt-10 headerText">
+                <div className="flex flex-row md:mt-[4.5rem] mt-16 headerText">
                     <MdOutlineLocationOn className="size-6 fill-black"/>
                     <p className="ml-1 mt-0.5">United States, California</p>
                 </div>
@@ -40,10 +40,12 @@ export default function Header() {
                         }}><span className="text-red-700">Determined</span> Learner</p>
                     </div>
                 <p className="mt-6 text-xl relative headerText text-gray-700">Specialized in developing and deploying web applications <br className="hidden md:block"></br>for a seamless and enjoyable web experience.</p>
-                <Button className="gradientTransition inline-flex items-center rounded-lg py-3 px-8 font-semibold text-md text-white relative before:content-[''] before:absolute before:w-full before:h-full before:outline before:bottom-0 before:left-0 before:rounded-lg before:outline-2 before:outline-transparent before:transition-all before:duration-150 before:ease-in before:hover:outline-offset-2 before:hover:outline-amber-500 before:active:outline-4 before:active:outline-amber-600 mt-10 mb-20 lg:mb-40 headerText">
-                    Get in touch!
-                    <ChevronRightIcon className="size-5 fill-white"/>
-                </Button>
+                <a href="#footer">
+                    <Button className="gradientTransition inline-flex items-center rounded-lg py-3 px-8 font-semibold text-md text-white relative before:content-[''] before:absolute before:w-full before:h-full before:outline before:bottom-0 before:left-0 before:rounded-lg before:outline-2 before:outline-transparent before:transition-all before:duration-150 before:ease-in before:hover:outline-offset-2 before:hover:outline-amber-500 before:active:outline-4 before:active:outline-amber-600 mt-10 mb-20 lg:mb-40 headerText">
+                        Get in touch!
+                        <ChevronRightIcon className="size-5 fill-white"/>
+                    </Button>
+                </a>
             </div>
             <Computer />
         </header>

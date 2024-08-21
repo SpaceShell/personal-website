@@ -1,0 +1,311 @@
+ html {
+  height: 100%;
+  width: 100%;
+}
+/*Navbar code  */
+.navbar {
+  background-color: #FF0000
+  
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #ffc7c7;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+  font-weight: 900;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+}
+/*Navbar code  */
+
+/* Resources code  */
+.rHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+}
+.col-md-3 {
+  width: 33.33%;
+
+}
+.row{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.icons{
+  border-radius: 50%;
+  width:  100px;
+  height: 100px;
+  overflow: hidden;
+}
+/* Resources code  */
+
+
+#brandTextPoke {
+  color: #903131;
+}
+
+#brandTextWeb {
+  color: #ffed7a;
+}
+
+#logo {
+  height: 30px;
+  max-width: 30px;
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+#searchButtonText {
+  all: unset;
+}
+
+ .header{
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.5) url(https://c1.wallpaperflare.com/preview/668/201/79/pikachu-pokemon-store-pokemon-store.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-bottom: 100px;
+}
+.header h1{color : red}
+#demo{color: white;font-style: italic; 
+     }
+.header h3{
+  color:#ffffff;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+.alert{border-color:yellow;
+       color: black;
+      background-color:white;
+      border-radius: 50px;
+      border-width:10px;}
+
+
+
+ .contactForm {
+   width: 100%; /* Full width */
+   padding: 12px; /* Some padding */ 
+   border: 1px solid #black; /* Gray border */
+   border-radius: 4px; /* Rounded borders */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+
+ /* Style the submit button with a specific background color etc */
+ .contactForm {
+   background-color: #red
+;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ /* When moving the mouse over the submit button, add a darker green color */
+.contactForm: {
+   background-color: #red;
+ }
+
+ /* Add a background color and some padding around the form */
+ .contactForm {
+   border-radius: 5px;
+   background-color: #red
+   ;
+   padding: 20px;
+ }
+
+/* carousel */
+.contain{
+  width:80%;
+  margin:10px auto;
+}
+.carousel{
+  border: 2px solid #ccc;
+  height:600px;
+  position: relative;
+  overflow: hidden;
+}
+.slider{
+  height:100%;
+  display:flex;
+  width:400%;
+  transition: all 0.3s;
+}
+.slider section{
+  flex-basis:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls .arrow{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.controls .arrow i{
+  font-size: 100px;
+}
+.arrow.left{
+  left: 10px;
+}
+.arrow.right{
+  right: 10px;
+}
+.controls ul{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.controls ul li{
+  width: 14px;
+  height: 14px;
+  border: 2px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  background: #333;
+  cursor: pointer;
+}
+.controls ul li.selected{
+  background: transparent;
+}
+
+section.secOne {
+    background-image: url('https://pa1.aminoapps.com/5703/5685461ae3011c73093cda677ce73a42bc9b4434_hq.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.secTwo {
+    background-image: url('https://media1.giphy.com/media/Pq2IpEZBq9ksaq7ajm/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.secThree {
+    background-image: url('https://i.gifer.com/BueK.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.secFour {
+    background-image: url('https://media.tenor.com/XXCynIUXQ9IAAAAC/pokemon-pokeplush.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel section p{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.secOne p {
+  position:relative; top:100px;
+}
+.secTwo p{
+  
+  position:relative; top:100px;
+}
+.secThree p {
+  position:relative; top:100px;
+}
+.secFour p {
+  position:relative; top:100px;
+}
+
+
+/* carousel */
+.recent{
+  color: white;
+
+}
+
+
+.footer-2{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: row wrap;
+  padding: 50px;
+}
+
+.scroll-container h2{ 
+text-align: center;
+  position: sticky;
+  color:white
+}
+
+.footer-2{
+  background-color: red;
+}
+
+.footer-2 ul{
+  list-style: none;
+}
+
+.footer-2 h2{
+  font-size:17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.footer-2 li{
+  line-height: 2em;
+  color: white;
+}
+
+.footer-2 a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.g-view{
+  display: flex;
+  justify-content:right;
+}
+
+.footer-bottom{
+  text-align: center;
+    color: #FFFFFF;
+}
+
+.small-container h2{
+  text-align: center;
+}
+.col-4 img{
+  border-radius: 10%;
+}
+
