@@ -1,0 +1,2 @@
+# Personal Website
+Welcome to my personal website's github! In this github, the code for the different aspects of my website can be openly viewed. To create the website, I mainly utilized Next.js, React, and Tailwind CSS, with other tools I used being Headless UI and Rive. In this website, you can find various information about my skills, experience, and portfolio of recent projects I have developed revolving around web development and data science. Feel free to visit my website and connect with me!
