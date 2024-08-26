@@ -7,9 +7,9 @@ import uiuxIcon from "../public/UIUXIcon.svg";
 
 export default function Work() {
     return (
-        <section id="info">
+        <section>
             <div>
-                <h2 className="sectionTitle mt-20 flex justify-center">What I Do</h2>
+                <h2 className="sectionTitle flex justify-center">What I Do</h2>
                     <div className="md:text-center md:mx-36 mx-10 mb-12">
                         <p>Using a blend of web technology and creative skills, I work to plan as well as efficiently develop web solutions that aid business outcomes by crafting functionally optimized applications ready for clients to use and providing engaging interactivity for users on the frontend. Through masterful problem-solving and a user-focused approach, I ensure the growth and impact of applications developed as I dedicate myself to the following areas:</p>
                     </div>

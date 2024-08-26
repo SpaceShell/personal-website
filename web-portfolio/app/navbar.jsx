@@ -1,15 +1,15 @@
 "use client"
 
 import React from "react";
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import Toggle from "./modeToggle";
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Logo from "./rive-anims/logo";
+import Mode from "./rive-anims/mode";
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
-  { name: 'Portfolio', href: '#portfolio', current: false },
-  { name: 'Contact', href: '#footer', current: false },
+  { name: 'Home', href: '#' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Contact', href: '#footer' },
 ]
 
 function classNames(...classes) {
@@ -18,13 +18,13 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white shadow-sm sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-white shadow-md sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-full px-4 sm:px-8 lg:px-10">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <Toggle />
+            <div className="relative flex h-16 xl:h-[4.5rem] items-center justify-between">
+              <div className="absolute inset-y-0 right-12 flex items-center sm:hidden">
+                <Mode />
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -40,11 +40,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
-                  {/* <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  /> */}
+                  <Logo />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -53,15 +49,13 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-gray-900' : 'text-gray-400 tracking-wider transition-colors duration-300 hover:text-gray-600',
-                          "rounded-md px-3 py-2 text-sm font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900",
+                          "text-gray-400 tracking-wider transition-colors duration-300 hover:text-gray-600 rounded-md px-3 py-2 text-sm xl:text-md font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
                     ))}
-                    <Toggle />
+                    <Mode />
                   </div>
                 </div>
               </div>
@@ -76,10 +70,8 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'text-gray-900' : 'text-gray-400 transition hover:text-gray-600',
-                    "block rounded-md px-3 py-2 text-base tracking-wider font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:duration-200 after:w-0 hover:after:w-full after:left-0 after:h-0.5 after:mx-auto after:bottom-1.5",
+                    "text-gray-400 transition hover:text-gray-600 block rounded-md px-3 py-2 text-base tracking-wider font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:duration-200 after:w-0 hover:after:w-full after:left-0 after:h-0.5 after:mx-auto after:bottom-1.5"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </DisclosureButton>

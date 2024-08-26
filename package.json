@@ -2,7 +2,8 @@
   "dependencies": {
     "@headlessui/react": "^2.1.0",
     "@heroicons/react": "^2.1.4",
-    "@rive-app/canvas": "^2.19.0",
+    "@rive-app/canvas": "^2.20.0",
+    "@rive-app/react-canvas": "^4.13.8",
     "@rive-app/react-canvas-lite": "^4.13.7",
     "next": "^14.2.5",
     "react-icons": "^5.2.1"

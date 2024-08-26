@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react"
 import TailwindLogo from "../public/tailwindcss-mark.svg";
 import NextWordmark from "../public/nextjs-logotype-light-background.svg";
+import gitIcon from "../public/git-icon.svg"
 import Image from 'next/image';
 import { Button } from '@headlessui/react';
 
@@ -75,10 +76,10 @@ const skillsBR = [
         className: "skillImage"
     },
     {
-        link: "", 
-        src: "", 
-        alt: "Flask logo", 
-        title: "", 
+        link: "https://git-scm.com/", 
+        src: gitIcon.src,
+        alt: "Git logo", 
+        title: "Git logo", 
         className: "skillImage"
     },
     {
@@ -106,10 +107,10 @@ export default function Skills() {
     }
 
     return (
-        <section className="mb-3 flex flex-col justify-center">
+        <section className="flex flex-col justify-center">
             <div className={organized ? "mx-10 md:mx-16 lg:mx-32" : "md:mx-32 mx-10 motion-reduce:md:mx-16 motion-reduce:lg:mx-32"}>
                 <div>
-                    <h2 className="sectionTitle">My Skills</h2>
+                    <h2 className="sectionTitle mt-[7rem]">My Skills</h2>
                 </div>
                 <div className={organized ? "max-w-4xl mx-auto" : "scroller mx-auto"}>
                     <div className={organized ? "flex flex-row flex-wrap md:flex-nowrap justify-center mb-7 md:mx-0 mx-10 mt-2 max-w-4xl" : "skillsRow scroll_inner"} style={{  "--direction": "forwards" }}>

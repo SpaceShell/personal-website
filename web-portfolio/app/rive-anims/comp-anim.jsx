@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useRive, useStateMachineInput } from '@rive-app/react-canvas-lite';
 import React from 'react';
 import { useRef, useEffect } from 'react';
@@ -32,11 +31,11 @@ export default function Computer() {
       }, [comp, rive]);
 
     return (
-        <Link href="#info" scroll={true} className='hidden lg:block mt-16 mr-20 headerText' ref={comp}>
-            <RiveComponent
-            onClick={() => clickInput && clickInput.fire()}
-            className=' w-96 h-96 cursor-pointer'
-            />
-        </Link>
+      <div ref={comp} className='hidden lg:block mt-16 mr-20 headerText'>
+        <RiveComponent
+        onClick={() => clickInput && clickInput.fire()}
+        className='w-96 h-96 xl:w-[28rem] xl:h-[28rem]'
+        />
+      </div>
     );
 }

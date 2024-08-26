@@ -8,7 +8,7 @@ import ProjectSlide from './projectSlide'
 
 export default function Projects() {
     return (
-        <section id="portfolio" className="py-4 mb-28">
+        <section id="portfolio" className="mb-28 mt-72">
             <div className="mx-10 lg:mx-32">
                 <h2 className="sectionTitle">My Projects</h2>
                 <div className="flex lg:flex-row flex-col items-center lg:items-start lg:justify-around">
@@ -25,7 +25,7 @@ export default function Projects() {
                     <ProjectSlide 
                         projImage={pokeWeb} 
                         title="Ashanti's PokeWeb" 
-                        description="A fun, engaging mock-website developed in a team using the Pokemon API for Pokemon enthusiasts to interact with, gain access to Pokemon knowledge, and purchase merchandise, being one of the final projects for the Tech Flex Leaders Program."
+                        description="A fun, engaging mock-website developed in a team using the Pokemon API for Pokemon enthusiasts to interact with, gain access to Pokemon knowledge, and view merchandise, being one of the final projects for the Tech Flex Leaders Program."
                         topSkills={["HTML", "CSS", "Javascript"]}
                         addedClasses=""
                         href="/Pokemon-Project/index.html"
