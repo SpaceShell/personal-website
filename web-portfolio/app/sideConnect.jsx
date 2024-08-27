@@ -3,6 +3,7 @@
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 export default function SideConnect() {
     return (
@@ -12,6 +13,9 @@ export default function SideConnect() {
             </a>
             <a href='mailto:sluis27901@gmail.com'>
                 <MdMailOutline className='mx-auto mt-3 size-9 text-gray-700 dark:text-gray-100'/>
+            </a>
+            <a href='https://github.com/SpaceShell'>
+                <FaGithub className='mx-auto mt-3 size-9 text-gray-700 dark:text-gray-100'/>
             </a>
         </aside>
     )
