@@ -19,14 +19,14 @@ export default function ProjectSlide({
     })
 
     return (
-        <div className={"border-4 border-red-700 rounded-2xl w-full max-w-lg h-full lg:mb-0 mb-8 min-w-0 " + addedClasses}>
+        <div className={"border-4 border-red-700 dark:border-red-500 rounded-2xl w-full max-w-lg h-full lg:mb-0 mb-8 min-w-0 " + addedClasses}>
             <Link href={href}>
                 <div style={{'--projImage': `url(${projImage.src})`}} className={"bg-[image:var(--projImage)] bg-[length:116%] hover:bg-[length:135%] bg-center bg-no-repeat transition-all duration-300 ease-out h-44 w-full rounded-t-xl"}></div>
             </Link>
             <Disclosure as="div" defaultOpen={false}>
                 <DisclosureButton className='group rounded-b-xl flex flex-col w-full items-center justify-between pt-6'>
                     <h3 className="font-bold text-xl mb-4 text-center">{title}</h3>
-                    <ChevronDownIcon className="size-5 fill-gray-800 group-data-[hover]:fill-gray-800/50 group-data-[open]:rotate-180 z-10 mb-3"/>
+                    <ChevronDownIcon className="size-5 fill-gray-800 dark:fill-gray-100 group-data-[hover]:fill-gray-800/50  dark:group-data-[hover]:fill-gray-200/50 group-data-[open]:rotate-180 z-10 mb-3"/>
                 </DisclosureButton>
                 <DisclosurePanel transition className='text-sm/5 px-6 rounded-b-xl origin-top transition-all duration-1000 ease-out max-h-screen data-[closed]:max-h-0 overflow-hidden'>
                     <h4 className="mt-2">Info:</h4>

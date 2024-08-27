@@ -6,7 +6,7 @@ import { MdMailOutline } from "react-icons/md";
 
 export default function Footer() {
     return (
-        <footer id="footer" className="w-full sm:h-36 bg-red-600 text-white pb-4 sm:pb-6">
+        <footer id="footer" className="w-full sm:h-36 bg-red-600 dark:bg-red-700 text-white pb-4 sm:pb-6">
             <ul className="ml-5 sm:ml-10 lg:ml-28 pt-6">
                 <p className="text-lg mb-2 font-bold">Ready to connect? Reach out!</p>
                 <li className="ml-0">

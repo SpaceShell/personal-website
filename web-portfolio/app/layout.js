@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="!scroll-smooth" lang="en">
-      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable}`}>{children}</body>
+      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable} dark:bg-neutral-900 dark:text-white`}>{children}</body>
     </html>
   );
 }

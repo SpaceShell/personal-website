@@ -45,7 +45,7 @@ const SplitText = React.memo(({ str, hover, setHover, introEnded, setIntroEnded 
             } else if (i > 10) {
                 return <span aria-hidden="true" key={i} id={letter} className={`${introEnded ? 
                     hover ? 'repeatHops' : 'lettersOriginal' 
-                    : 'singleLetters'} text-red-700`}onAnimationEnd={
+                    : 'singleLetters'} redText`}onAnimationEnd={
                 e => 
                 {
                     if (e.animationName == "littleJumps" && e.target.innerHTML == "!" && e.elapsedTime > 0) {

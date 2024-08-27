@@ -22,7 +22,7 @@
 
 @layer components {
   .cards {
-    @apply shadow-[0px_4px_6px_4px_rgba(0,0,0,0.1),0_2px_4px_0px_rgba(0,0,0,0.1)] rounded-2xl w-full min-h-72 px-7 pt-9 pb-12 text-center transition hover:scale-105 bg-white mb-10;
+    @apply shadow-[0px_4px_6px_4px_rgba(0,0,0,0.1),0_2px_4px_0px_rgba(0,0,0,0.1)] dark:shadow-[0px_4px_6px_4px_rgba(100,100,100,1),0_2px_4px_0px_rgba(100,100,100,1)] rounded-2xl w-full min-h-72 px-7 pt-9 pb-12 text-center transition hover:scale-105 bg-white dark:bg-neutral-800 mb-10;
   }
   .cardsInnerTitle {
     @apply font-bold text-xl;
@@ -37,25 +37,25 @@
     @apply flex flex-row flex-wrap motion-reduce:md:flex-nowrap justify-between motion-reduce:justify-center mb-7 md:mx-0 mx-10 mt-2;
   }
   .skill {
-    @apply my-2 border-8 border-transparent rounded-3xl px-4 py-4 mt-3 mx-6 motion-reduce:lg:mx-6 motion-reduce:md:mx-auto min-w-24 w-24 h-24 max-w-24 max-h-24 flex items-center relative justify-center bg-white;
+    @apply my-2 border-8 border-transparent rounded-3xl px-4 py-4 mt-3 mx-6 motion-reduce:lg:mx-6 motion-reduce:md:mx-auto min-w-24 w-24 h-24 max-w-24 max-h-24 flex items-center relative justify-center bg-white dark:bg-neutral-900;
   }
   .skillImage {
     @apply mr-auto ml-auto min-w-10 min-h-10;
   }
   .sectionTitle {
-    @apply mt-28 md:mt-40 mb-12 text-[2.35rem] font-ExBoldsarabun text-red-700 text-center relative after:content-[''] after:absolute after:w-48 after:h-1 after:bg-red-700 after:-bottom-3 flex justify-center;
+    @apply mt-28 md:mt-40 mb-12 text-[2.35rem] font-ExBoldsarabun redText text-center relative after:content-[''] after:absolute after:w-48 after:h-1 after:bg-red-700 dark:after:bg-red-500 after:-bottom-3 flex justify-center;
   }
   .flowerAnims {
     @apply w-full h-32;
   }
   .timelineContainer {
-    @apply relative w-7/12 sm:w-9/12 md:w-[60%] left-[8rem] sm:left-[9rem] lg:left-[25rem] md:left-[19rem] after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white after:border-[5px] after:border-red-900 after:absolute after:-top-1 after:-left-[5.1rem] after:z-10;
+    @apply relative w-7/12 sm:w-9/12 md:w-[60%] left-[8rem] sm:left-[9rem] lg:left-[25rem] md:left-[19rem] after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white dark:after:bg-neutral-900 after:border-[5px] after:border-red-900 dark:after:border-red-700 after:absolute after:-top-1 after:-left-[5.1rem] after:z-10;
   }
   .timelineText {
     @apply mt-4 mr-4 lg:mr-36 md:mr-28 2xl:mr-0;
   }
   .timelineDate {
-    @apply absolute text-sm  md:text-xl text-red-900 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-28;
+    @apply absolute text-sm  md:text-xl text-red-900 dark:text-red-700 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-28;
   }
   li {
     @apply ml-4;
@@ -63,12 +63,12 @@
   h4 {
     @apply font-bold;
   }
-}
-
-/*Check if this works and check logo*/
-.darkMode {
-  background-color: rgb(64 64 64);;
-  color: white;
+  .navItem {
+    @apply text-[--navText] hover:text-[--hoverNav];
+  }
+  .redText {
+    @apply text-red-700 dark:text-red-500
+  }
 }
 
 .letters {

@@ -7,7 +7,7 @@ export default function Experience() {
         <section>
             <div>
                 <h2 className="sectionTitle md:mx-32 mx-10 mb-16">My Experience</h2>
-                    <div className="relative max-w-full after:content-[''] after:w-1.5 after:h-[97%] after:lg:h-[120%] after:bg-gradient-to-b after:from-red-900 after:from-90% after:to-transparent after:absolute after:left-[4rem] sm:after:left-[5rem] after:lg:left-[21rem] after:md:left-[15rem] after:top-5">
+                    <div className="relative max-w-full after:content-[''] after:w-1.5 after:h-[97%] after:lg:h-[120%] after:bg-gradient-to-b after:from-red-900 dark:after:from-red-700 after:from-90% after:to-transparent after:absolute after:left-[4rem] sm:after:left-[5rem] after:lg:left-[21rem] after:md:left-[15rem] after:top-5">
                         <div className="timelineContainer">
                             <p className="timelineDate md:-left-52">July 2023</p>
                             <h2 className="font-extrabold text-2xl">America On Tech</h2>
