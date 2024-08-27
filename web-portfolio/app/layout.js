@@ -21,8 +21,8 @@ const soraExBold = Sora({
 })
 
 export const metadata = {
-  title: "Portfolio",
-  description: "A web development portfolio",
+  title: "Steve Luis - Portfolio",
+  description: "My web development portfolio to showcase what I do, my skills, and my portfolio. Feel free to connect!",
 };
 
 export default function RootLayout({ children }) {
