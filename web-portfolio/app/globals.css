@@ -12,14 +12,6 @@
   --initialRotateX: 0;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 @layer components {
   .cards {
     @apply shadow-[0px_4px_6px_4px_rgba(0,0,0,0.1),0_2px_4px_0px_rgba(0,0,0,0.1)] dark:shadow-[0px_4px_6px_4px_rgba(100,100,100,1),0_2px_4px_0px_rgba(100,100,100,1)] rounded-2xl w-full min-h-72 px-7 pt-9 pb-12 text-center transition hover:scale-105 bg-white dark:bg-neutral-800 mb-10;
@@ -67,7 +59,7 @@
     @apply text-[--navText] hover:text-[--hoverNav];
   }
   .redText {
-    @apply text-red-700 dark:text-red-500
+    @apply text-red-700 dark:text-red-500;
   }
 }
 
