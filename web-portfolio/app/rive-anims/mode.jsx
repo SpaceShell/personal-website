@@ -13,7 +13,7 @@ const changeMode = (theme, setTheme) => {
     }
 }
 
-export default function Logo() {
+export default function Mode() {
     const { RiveComponent } = useRive({
         src: 'lightdark.riv',
         stateMachines: 'Button State',
