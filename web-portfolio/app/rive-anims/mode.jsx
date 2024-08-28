@@ -1,39 +1,41 @@
-import { useRive, useStateMachineInput } from '@rive-app/react-canvas-lite';
+"use client"
+
+import { useRive } from '@rive-app/react-canvas-lite';
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes'
 
-const changeMode = (dark, setDark) => {
-    setDark(!dark)
-    const DOM = document.querySelector('html');
-
-    if (dark == true) {
-        DOM.classList.add('dark');
-    } else if (dark == false) {
-        DOM.classList.remove('dark');
+const changeMode = (theme, setTheme) => {
+    if (theme == 'light') {
+        setTheme('dark')
+    } else if (theme == 'dark') {
+        setTheme('light')
     }
 }
 
 export default function Logo() {
-    const { rive, RiveComponent } = useRive({
+    const { RiveComponent } = useRive({
         src: 'lightdark.riv',
         stateMachines: 'Button State',
         autoplay: true,
     });
-
-    const [dark, setDark] = useState(true);
+    const [mounted, setMounted] = useState(false)
+    const { theme, setTheme } = useTheme()
 
     useEffect(() => {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            changeMode(dark, setDark);
-        }
+        setMounted(true)
     }, [])
+
+    if (!mounted) {
+        return null
+    }
 
     return (
         <RiveComponent
         className='w-10 h-10'
         alt="Change to light or dark mode"
-        onClick={() => changeMode(dark, setDark)}
-        onTouchStart={() => changeMode(dark, setDark)}
+        onClick={() => changeMode(theme, setTheme)}
+        onTouchStart={() => changeMode(theme, setTheme)}
         />
     );
 }

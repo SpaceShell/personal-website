@@ -63,7 +63,7 @@ const skillsTR = [
     {
         link: "https://jquery.com/", 
         src: jQueryImageDark.src,
-        alt: "JQuery logo", 
+        alt: "JQuery logo dark", 
         title: "jQuery", 
         className: "skillImage min-w-1 min-h-1",
         outsideClassname: " hidden dark:flex"
@@ -90,7 +90,7 @@ const skillsBR = [
     {
         link: "https://nextjs.org/", 
         src: NextWordmarkDark.src, 
-        alt: "Next.js logo", 
+        alt: "Next.js logo dark", 
         title: "Next.js", 
         className: "skillImage",
         outsideClassname: " hidden dark:flex"

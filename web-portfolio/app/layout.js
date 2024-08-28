@@ -2,6 +2,7 @@
 
 import { Vazirmatn, Sarabun, Sora } from 'next/font/google';
 import "./globals.css";
+import { ThemeProvider } from 'next-themes';
 
 const vazirmatn = Vazirmatn({ 
   subsets: ['latin'], 
@@ -27,8 +28,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="!scroll-smooth prefersDark" lang="en">
-      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable} dark:bg-neutral-900 dark:text-white`}>{children}</body>
+    <html className="!smooth-scroll" lang="en" suppressHydrationWarning>
+      <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable} dark:bg-neutral-900 dark:text-white`}>
+        <ThemeProvider attribute='class'>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
