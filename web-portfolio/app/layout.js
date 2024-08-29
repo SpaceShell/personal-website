@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html className="scroll-smooth" lang="en" suppressHydrationWarning>
       <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable} dark:bg-neutral-900 dark:text-white`}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem themes={['light', 'dark']}>{children}</ThemeProvider>
+        <ThemeProvider attribute='class' enableSystem={true} themes={['light', 'dark']}>{children}</ThemeProvider>
       </body>
     </html>
   );

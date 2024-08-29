@@ -11,15 +11,14 @@ export default function Mode() {
     });
     const [mounted, setMounted] = useState(false);
 
-    const { theme, setTheme } = useTheme();
+    const { theme, resolvedTheme, setTheme } = useTheme();
 
     function themeSwitch() {
-        if (theme == 'light') {
+        if (resolvedTheme == 'light') {
             setTheme('dark');
-        } else if (theme == 'dark') {
+        } else if (resolvedTheme == 'dark') {
             setTheme('light');
         }
-        console.log(theme)
     }
 
     useEffect(() => {
