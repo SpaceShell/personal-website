@@ -16,24 +16,31 @@ export default function Mode() {
         setMounted(true);
     }, [])
 
-    const modeChange = () => {
-        if (theme == 'light') {
-            setTheme('dark');
-        } else if (theme == 'dark') {
-            setTheme('light');
-        }
-    }
-
     if (!mounted) {
         return null;
     }
 
     return(
-        <RiveComponent
-        onClick={modeChange}
-        onTouchStart={modeChange}
-        className='w-10 h-10'
-        alt="Change to light or dark mode"
-        />
+        <div         
+        onClick={() => {
+            if (theme == 'light') {
+                setTheme('dark');
+            } else if (theme == 'dark') {
+                setTheme('light');
+            }
+        }}
+        onTouchStart={() => {
+            if (theme == 'light') {
+                setTheme('dark');
+            } else if (theme == 'dark') {
+                setTheme('light');
+            }
+        }}
+        >
+            <RiveComponent
+            className='w-10 h-10'
+            alt="Change to light or dark mode"
+            />
+        </div>
     );
 }

@@ -1,4 +1,4 @@
-import { useRive, useStateMachineInput } from '@rive-app/react-canvas-lite';
+import { useRive } from '@rive-app/react-canvas-lite';
 import React from 'react';
 import { useRef, useEffect } from 'react';
 
@@ -8,8 +8,6 @@ export default function Computer() {
         stateMachines: "Floats and Mouse",
         autoplay: true,
     });
-
-    const clickInput = useStateMachineInput(rive, "Button State", "Click");
 
     const comp = useRef();
 
@@ -33,7 +31,6 @@ export default function Computer() {
     return (
       <div ref={comp} className='hidden lg:block mt-16 mr-20 headerText'>
         <RiveComponent
-        onClick={() => clickInput && clickInput.fire()}
         className='w-96 h-96 xl:w-[28rem] xl:h-[28rem]'
         />
       </div>
