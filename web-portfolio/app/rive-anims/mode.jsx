@@ -1,5 +1,3 @@
-"use client"
-
 import { useRive } from '@rive-app/react-canvas-lite';
 import React from 'react';
 import { useTheme } from 'next-themes';
@@ -18,11 +16,7 @@ export default function Mode() {
         setMounted(true);
     }, [])
 
-    if (!mounted) {
-        return null;
-    }
-
-    const changeMode = () => {
+    const modeChange = () => {
         if (theme == 'light') {
             setTheme('dark');
         } else if (theme == 'dark') {
@@ -30,12 +24,16 @@ export default function Mode() {
         }
     }
 
-    return (
+    if (!mounted) {
+        return null;
+    }
+
+    return(
         <RiveComponent
+        onClick={modeChange}
+        onTouchStart={modeChange}
         className='w-10 h-10'
         alt="Change to light or dark mode"
-        onClick={changeMode}
-        onTouchStart={changeMode}
         />
     );
 }
