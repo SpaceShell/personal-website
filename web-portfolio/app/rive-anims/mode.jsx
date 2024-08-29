@@ -3,6 +3,7 @@
 import { useRive } from '@rive-app/react-canvas-lite';
 import React from 'react';
 import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 
 export default function Mode() {
     const { RiveComponent } = useRive({
@@ -10,22 +11,31 @@ export default function Mode() {
         stateMachines: 'Button State',
         autoplay: true,
     });
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
 
-    const changeMode = (theme, setTheme) => {
+    useEffect(() => {
+        setMounted(true);
+    }, [])
+
+    if (!mounted) {
+        return null;
+    }
+
+    const changeMode = () => {
         if (theme == 'light') {
-            setTheme('dark')
+            setTheme('dark');
         } else if (theme == 'dark') {
-            setTheme('light')
+            setTheme('light');
         }
     }
 
     return (
-        <div onClick={() => changeMode(theme, setTheme)} onTouchStart={() => changeMode(theme, setTheme)}>
-            <RiveComponent
-            className='w-10 h-10'
-            alt="Change to light or dark mode"
-            />
-        </div>
+        <RiveComponent
+        className='w-10 h-10'
+        alt="Change to light or dark mode"
+        onClick={changeMode}
+        onTouchStart={changeMode}
+        />
     );
 }
