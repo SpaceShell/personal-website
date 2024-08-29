@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="!smooth-scroll" lang="en" suppressHydrationWarning>
+    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
       <body className={`${vazirmatn.className} ${sarabunExtrabold.variable} ${soraExBold.variable} dark:bg-neutral-900 dark:text-white`}>
         <ThemeProvider attribute='class'>{children}</ThemeProvider>
       </body>

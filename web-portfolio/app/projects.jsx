@@ -4,7 +4,7 @@ import React from "react";
 import healthyWeb from '../public/HomeForHealthyHabits.jpg';
 import pokeWeb from '../public/AshantiPokeWeb.jpg';
 import dataScience from '../public/DataScience.jpg';
-import ProjectSlide from './projectSlide'
+import ProjectSlide from './projectSlide.jsx'
 
 export default function Projects() {
     return (

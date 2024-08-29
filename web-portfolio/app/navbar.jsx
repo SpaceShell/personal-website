@@ -3,9 +3,9 @@
 import React from "react";
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import LogoLight from "./rive-anims/logoLight";
-import LogoDark from "./rive-anims/logoDark"
-import Mode from "./rive-anims/mode";
+import LogoLight from "./rive-anims/logoLight.jsx";
+import LogoDark from "./rive-anims/logoDark.jsx"
+import Mode from "./rive-anims/mode.jsx";
 
 const navigation = [
   { name: 'Home', href: '#' },

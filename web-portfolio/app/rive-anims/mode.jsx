@@ -3,7 +3,7 @@
 import { useRive } from '@rive-app/react-canvas-lite';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes'
+import { useTheme } from 'next-themes';
 
 const changeMode = (theme, setTheme) => {
     if (theme == 'light') {
