@@ -21,11 +21,11 @@ export default function Mode() {
     }
 
     return (
-        <RiveComponent
-        className='w-10 h-10'
-        alt="Change to light or dark mode"
-        onClick={() => changeMode(theme, setTheme)}
-        onTouchStart={() => changeMode(theme, setTheme)}
-        />
+        <div onClick={() => changeMode(theme, setTheme)} onTouchStart={() => changeMode(theme, setTheme)}>
+            <RiveComponent
+            className='w-10 h-10'
+            alt="Change to light or dark mode"
+            />
+        </div>
     );
 }
