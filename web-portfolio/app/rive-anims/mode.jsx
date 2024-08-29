@@ -1,6 +1,5 @@
 import { useRive } from '@rive-app/react-canvas-lite';
 import React from 'react';
-import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 
 export default function Mode() {
@@ -9,7 +8,6 @@ export default function Mode() {
         stateMachines: 'Button State',
         autoplay: true,
     });
-    const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -21,26 +19,9 @@ export default function Mode() {
     }
 
     return(
-        <div         
-        onClick={() => {
-            if (theme == 'light') {
-                setTheme('dark');
-            } else if (theme == 'dark') {
-                setTheme('light');
-            }
-        }}
-        onTouchStart={() => {
-            if (theme == 'light') {
-                setTheme('dark');
-            } else if (theme == 'dark') {
-                setTheme('light');
-            }
-        }}
-        >
-            <RiveComponent
-            className='w-10 h-10'
-            alt="Change to light or dark mode"
-            />
-        </div>
+        <RiveComponent
+        className='w-10 h-10'
+        alt="Change to light or dark mode"
+        />
     );
 }

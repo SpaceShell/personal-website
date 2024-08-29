@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import LogoLight from "./rive-anims/logoLight.jsx";
 import LogoDark from "./rive-anims/logoDark.jsx"
 import Mode from "./rive-anims/mode.jsx";
+import { useTheme } from 'next-themes';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -18,14 +19,29 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const { theme, setTheme } = useTheme();
   return (
     <Disclosure as="nav" className="bg-white dark:bg-neutral-900 shadow-md sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-full px-4 sm:px-8 lg:px-10">
             <div className="relative flex h-16 xl:h-[4.5rem] items-center justify-between">
-              <div className="absolute inset-y-0 right-12 flex items-center sm:hidden">
-                <Mode />
+              <div className="absolute inset-y-0 right-12 flex items-center sm:hidden"
+              onClick={() => {
+                if (theme == 'light') {
+                    setTheme('dark');
+                } else if (theme == 'dark') {
+                    setTheme('light');
+                }
+              }}
+              onTouchStart={() => {
+                  if (theme == 'light') {
+                      setTheme('dark');
+                  } else if (theme == 'dark') {
+                      setTheme('light');
+                  }
+              }}>
+                <Mode/>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -57,7 +73,23 @@ export default function Navbar() {
                         {item.name}
                       </a>
                     ))}
-                    <Mode />
+                    <div 
+                    onClick={() => {
+                        if (theme == 'light') {
+                            setTheme('dark');
+                        } else if (theme == 'dark') {
+                            setTheme('light');
+                        }
+                    }}
+                    onTouchStart={() => {
+                        if (theme == 'light') {
+                            setTheme('dark');
+                        } else if (theme == 'dark') {
+                            setTheme('light');
+                        }
+                    }}>
+                    <Mode/>
+                    </div>
                   </div>
                 </div>
               </div>
