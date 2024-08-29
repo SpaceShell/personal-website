@@ -71,8 +71,7 @@ const SplitText = React.memo(({ str, hover, setHover, introEnded, setIntroEnded 
     );
 });
 
-//Full header component
-export default function Header() {
+export default function SplitLetters() {
     const [hover, setHover] = useState(false);
     const [introEnded, setIntroEnded] = useState(false);
 
