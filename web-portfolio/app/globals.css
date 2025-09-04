@@ -47,7 +47,7 @@
     @apply mt-4 mr-4 lg:mr-36 md:mr-28 2xl:mr-0;
   }
   .timelineDate {
-    @apply absolute text-sm  md:text-xl text-red-900 dark:text-red-700 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-28;
+    @apply absolute text-sm md:text-xl text-red-900 dark:text-red-700 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-[7rem] md:-left-[19rem] w-[200px];
   }
   li {
     @apply ml-4;

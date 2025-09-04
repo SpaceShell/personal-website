@@ -23,7 +23,7 @@ export default function Header() {
             <img src={topLight.src} className="absolute h-72 w-72 -top-20 right-0 z-10 block dark:hidden"/>
             <img src={topLightDark.src} className="absolute h-72 w-72 -top-20 right-0 z-10 hidden dark:block"/>
             <div className="relative grow mx-6 md:mx-none lg:ml-40 md:ml-24">
-                <div className="flex flex-row md:mt-[4.5rem] mt-16 headerText">
+                <div className="flex flex-row md:mt-[7.2rem] mt-16 headerText">
                     <MdOutlineLocationOn className="size-6 fill-black dark:fill-white"/>
                     <p className="ml-1 mt-0.5">United States, California</p>
                 </div>

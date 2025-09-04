@@ -51,7 +51,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          "text-gray-400 tracking-wider transition-colors duration-300 hover:text-gray-600 rounded-md px-3 py-2 text-sm xl:text-md font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900 dark:text-white dark:hover:text-gray-300"
+                          "text-gray-400 tracking-wider transition-colors duration-300 hover:text-gray-600 rounded-md px-3 py-2 text-md xl:text-md font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900 dark:text-white dark:hover:text-gray-300"
                         )}
                       >
                         {item.name}
