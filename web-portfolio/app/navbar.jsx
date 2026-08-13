@@ -19,7 +19,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white dark:bg-neutral-900 shadow-md sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-white/90 dark:bg-neutral-900 sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-full px-4 sm:px-8 lg:px-10">
@@ -33,9 +33,9 @@ export default function Navbar() {
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w-6" />
                   )}
                 </DisclosureButton>
               </div>
@@ -51,7 +51,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          "text-gray-400 tracking-wider transition-colors duration-300 hover:text-gray-600 rounded-md px-3 py-2 text-md xl:text-md font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900 dark:text-white dark:hover:text-gray-300"
+                          "text-stone-700 tracking-wider transition-colors duration-300 hover:text-stone-900 rounded-md px-3 py-2 text-md xl:text-md font-bold relative after:content-[''] after:absolute after:bg-red-700 after:transition-all after:w-0 hover:after:w-9/12 after:origin-left after:h-0.5 after:right-0 after:left-0 after:mx-auto after:bottom-1.5 active:text-red-900 dark:text-white dark:hover:text-gray-300"
                         )}
                       >
                         {item.name}

@@ -84,7 +84,7 @@ export default function SplitLetters() {
     }
 
     return(
-        <h1 className={"font-soraExBold tracking-tight md:mt-40 mt-28 text-6xl z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
+        <h1 className={"font-soraExBold tracking-tight text-6xl z-10 absolute letters"} aria-hidden="true" onMouseEnter={repeatHop}>
             <SplitText str={"Hello, I'm Steve Luis!"} hover={hover} setHover={setHover} introEnded={introEnded} setIntroEnded={setIntroEnded}/>
         </h1>
     )

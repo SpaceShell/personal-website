@@ -9,7 +9,7 @@ import ProjectSlide from './projectSlide.jsx';
 
 export default function Projects() {
     return (
-        <section id="portfolio" className="mb-28 mt-96">
+        <section id="portfolio" className="mb-28">
             <div className="mx-10 lg:mx-32">
                 <h2 className="sectionTitle">My Projects</h2>
                 <div className="flex lg:flex-wrap lg:space-x-2 lg:flex-row flex-col items-center lg:items-start lg:justify-around">
