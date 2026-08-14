@@ -20,9 +20,9 @@ export default function Header() {
     return(
         <header className='flex flex-col lg:px-10 justify-evenly relative'>
             <SideConnect />
-            <img src={topLight.src} className="absolute h-72 w-72 -top-20 right-0 z-10 block dark:hidden"/>
-            <img src={topLightDark.src} className="absolute h-72 w-72 -top-20 right-0 z-10 hidden dark:block"/>
-            <div className="flex flex-col justify-center relative mx-6 mt-24 md:mt-32 md:mx-none text-center">
+            <Image src={topLight.src} width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 block dark:hidden"/>
+            <Image src={topLightDark.src} width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 hidden dark:block"/>
+            <div className="flex flex-col justify-center relative mx-6 mt-24 md:mt-28 md:mx-none text-center">
                 <Image src={"/leftConnectedClouds.png"} width={260} height={100}className="hidden md:block absolute -bottom-10 left-32"/>
                 <Image src={"/rightConnectedClouds.svg"} width={260} height={100}className="hidden md:block absolute -top-28 right-32"/>
                 <SplitLetters />
@@ -40,12 +40,15 @@ export default function Header() {
                         }}><span className="redText">Wordpress</span> Developer</p>
                     </div>
                 <p className="mt-6 text-xl relative headerText text-gray-700 dark:text-gray-100">Specialized in developing and deploying web applications <br className="hidden md:block"></br>for a seamless and enjoyable web experience.</p>
-                <div className="flex justify-center items-center flex-col mb-24 md:flex-row md:gap-5">
+                <div className="flex justify-center items-center flex-col md:flex-row md:gap-5">
                     <HeaderTag tag={"Computer Science @ UC Irvine"} iconType={"education"}/>
                     <HeaderTag tag={"United States, California"} iconType={"location"}/>
                 </div>
+                <div className="flex justify-center items-center flex-col mb-24 md:flex-row md:gap-5">
+                    <HeaderTag tag={"HSF Scholar & Pinterest Engage Scholar"} iconType={"awards"}/>
+                </div>
                 <a href="#footer">
-                    <Button className="gradientTransition inline-flex items-center rounded-lg py-3 px-8 font-semibold text-md text-white relative before:content-[''] before:absolute before:w-full before:h-full before:outline before:bottom-0 before:left-0 before:rounded-lg before:outline-2 before:outline-transparent before:transition-all before:duration-150 before:ease-in before:hover:outline-offset-2 before:hover:outline-amber-500 before:active:outline-4 before:active:outline-amber-600 mt-10 headerText">
+                    <Button className="gradientTransition inline-flex items-center rounded-lg py-3 px-8 font-semibold text-md text-white relative before:content-[''] before:absolute before:w-full before:h-full before:outline before:bottom-0 before:left-0 before:rounded-lg before:outline-2 before:outline-transparent before:transition-all before:duration-150 before:ease-in before:hover:outline-offset-2 before:hover:outline-amber-500 before:active:outline-4 before:active:outline-amber-600 headerText">
                         Get in touch!
                         <ChevronRightIcon className="size-5 fill-white"/>
                     </Button>

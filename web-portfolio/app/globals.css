@@ -29,13 +29,13 @@
     @apply w-full h-32;
   }
   .timelineContainer {
-    @apply relative w-7/12 sm:w-9/12 md:w-[60%] left-[8rem] sm:left-[9rem] lg:left-[25rem] md:left-[19rem] after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white dark:after:bg-neutral-900 after:border-[5px] after:border-red-900 dark:after:border-red-700 after:absolute after:-top-1 after:-left-[5.1rem] after:z-10;
+    @apply relative block w-7/12 sm:w-9/12 md:w-[100%] md:pl-[290px] left-[8rem] sm:left-[9rem] lg:left-0 md:left-0 after:content-[''] after:h-10 after:w-10 after:rounded-full after:bg-white dark:after:bg-neutral-900 after:border-[5px] after:border-red-900 dark:after:border-red-700 after:absolute after:-top-1 md:after:left-[210px] after:-left-[5rem] after:z-10 ;
   }
   .timelineText {
-    @apply mt-4 mr-4 lg:mr-36 md:mr-28 2xl:mr-0;
+    @apply mt-4 mr-4 md:mr-0;
   }
   .timelineDate {
-    @apply absolute text-sm md:text-xl text-red-900 dark:text-red-700 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-[7rem] md:-left-[19rem] w-[200px];
+    @apply absolute text-sm md:text-xl text-red-900 dark:text-red-700 text-right [writing-mode:vertical-lr] md:[writing-mode:horizontal-tb] -left-[7rem] md:left-0 w-[170px];
   }
   li {
     @apply ml-4;
