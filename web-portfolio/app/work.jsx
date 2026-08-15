@@ -1,9 +1,6 @@
 "use client"
 
 import React from "react";
-import responsiveIcon from "../public/ResponsiveIcon.svg";
-import webdevIcon from "../public/WebDevIcon.svg";
-import uiuxIcon from "../public/UIUXIcon.svg";
 import FocusAreaCard from "./components/focus-area-card";
 
 export default function Work() {

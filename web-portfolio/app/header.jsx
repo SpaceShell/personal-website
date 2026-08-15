@@ -23,8 +23,8 @@ export default function Header() {
             <Image src={topLight.src} width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 block dark:hidden"/>
             <Image src={topLightDark.src} width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 hidden dark:block"/>
             <div className="flex flex-col justify-center relative mx-6 mt-24 md:mt-28 md:mx-none text-center">
-                <Image src={"/leftConnectedClouds.png"} width={260} height={100}className="hidden md:block absolute -bottom-10 left-32"/>
-                <Image src={"/rightConnectedClouds.svg"} width={260} height={100}className="hidden md:block absolute -top-28 right-32"/>
+                <Image src={"/leftConnectedClouds.png"} width={260} height={100} preload={"true"} alt="On the left side, two clouds with code symbols connected by a dashed line" className="hidden md:block absolute -bottom-10 left-32"/>
+                <Image src={"/rightConnectedClouds.svg"} width={260} height={100} preload={"true"} alt="On the right side, two clouds with code symbols connected by a dashed line" className="hidden md:block absolute -top-28 right-32"/>
                 <SplitLetters />
                 <h1 className="font-soraExBold tracking-tight text-6xl relative for-sr">Hello, I'm <br className="sm:hidden" aria-hidden="true"></br>Steve Luis!</h1>
                 <p className={sarabunSemi.className + " text-3xl headerText mt-4 md:mt-7 text-gray-900 dark:text-gray-100"}>I am a...</p>

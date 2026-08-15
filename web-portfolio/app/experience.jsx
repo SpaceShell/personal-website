@@ -39,6 +39,18 @@ export default function Experience() {
                     title={"Web Student Assistant"}
                     description={["Maintained the organization of multiple websites within the Cascade and WordPress Content Management Systems", "Updated the frontend content and styling to fix issues faced by users using HTML, CSS, and Javascript", "Validated and ensured that all web pages followed WCAG 2.0/2.1 AA accessibility standards", "Communicated technical aspects of web projects to effectively plan and establish requirements"]}
                     />
+                    <TimelinePoint 
+                    date={"August 2025 - Present"} 
+                    company={"Taiwanese Chamber of Commerce in Orange County"}
+                    title={"Wordpress Developer"}
+                    description={["Established the tech stack and tools to be used to best fulfill the organization's goals while considering factors such as cost and scalability", "Redesigned and modernized the organization's website with UI/UX best practices in mind to clearly communicate the Chamber’s values and elevate its brand", "Built a clean, mobile-responsive website for an intuitive web experience using HTML, CSS, and WordPress + Elementor", "Integrated operation automation to streamline membership, communication, and event workflows"]}
+                    />
+                    <TimelinePoint 
+                    date={"March 2026 - April 2026"} 
+                    company={"UCI ANTrepreneur Center"}
+                    title={"Wordpress Developer"}
+                    description={["Coordinated with a team to support Giving Day content for UC Irvine campus schools and units", "Ensured that 20+ webpages were compliant with ADA and WCAG accessibility standards", "Analyzed multiple images in each webpage and applied accurate, descriptive alt text to support user experience", "Added and verified captions for embedded mid-form video content"]}
+                    />
                 </div>
             </div>
         </section>
