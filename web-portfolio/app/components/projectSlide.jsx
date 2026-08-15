@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import "./globals.css";
 
 export default function ProjectSlide({
     projImage, title, description, topSkills, addedClasses, href, codeLink

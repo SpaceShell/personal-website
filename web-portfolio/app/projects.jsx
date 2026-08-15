@@ -5,7 +5,7 @@ import healthyWeb from '../public/HomeForHealthyHabits.jpg';
 import pokeWeb from '../public/AshantiPokeWeb.jpg';
 import dataScience from '../public/DataScience.jpg';
 import bookIt from '../public/BookItLogo.png';
-import ProjectSlide from './projectSlide.jsx';
+import ProjectSlide from './components/projectSlide.jsx';
 
 export default function Projects() {
     return (

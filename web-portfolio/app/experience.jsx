@@ -48,7 +48,7 @@ export default function Experience() {
                     <TimelinePoint 
                     date={"March 2026 - April 2026"} 
                     company={"UCI ANTrepreneur Center"}
-                    title={"Wordpress Developer"}
+                    title={"Accessibility Specialist"}
                     description={["Coordinated with a team to support Giving Day content for UC Irvine campus schools and units", "Ensured that 20+ webpages were compliant with ADA and WCAG accessibility standards", "Analyzed multiple images in each webpage and applied accurate, descriptive alt text to support user experience", "Added and verified captions for embedded mid-form video content"]}
                     />
                 </div>
