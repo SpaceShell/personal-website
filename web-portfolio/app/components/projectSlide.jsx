@@ -19,7 +19,7 @@ export default function ProjectSlide({
     })
 
     return (
-        <div className={"border-0 dark:border-red-500 rounded-2xl h-full lg:mb-0 mb-8 min-w-0 basis-[32%] " + addedClasses}>
+        <div className={"border-0 dark:border-red-500 rounded-2xl h-full lg:mb-0 mb-8 basis-[32%] " + addedClasses}>
             <Link href={href}>
                 <div style={{'--projImage': `url(${projImage.src})`}} className={"bg-[image:var(--projImage)] bg-[length:116%] hover:bg-[length:135%] bg-center bg-no-repeat transition-all duration-300 ease-out h-44"}></div>
             </Link>

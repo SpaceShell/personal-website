@@ -12,7 +12,7 @@ export default function HomeForHealthyHabits() {
       <main className="flex flex-col lg:flex-row gap-20 mx-16 md:mx-32 lg:mx-48 my-10">
         <div className="order-last lg:order-first basis-2/5 content-center flex flex-col justify-center items-center">
           <ProjectCarousel 
-          image1={"/HomeForHealthyHabits.jpg"}
+          image1={"/Bootstrap-Practice/images/HomeForHealthyHabits.jpg"}
           image2={"/Bootstrap-Practice/images/HomeForHealthyHabits-Services.png"}
           image3={"/Bootstrap-Practice/images/HomeForHealthyHabits-Contact.png"}
           />
