@@ -49,6 +49,9 @@
   .redText {
     @apply text-red-700 dark:text-red-500;
   }
+  .sectionMargin {
+    @apply mx-16 md:mx-32 lg:mx-64;
+  }
 }
 
 .letters {
@@ -258,3 +261,17 @@
   }
 }
 
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  width: fit-content;
+}

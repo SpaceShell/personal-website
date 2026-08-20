@@ -3,14 +3,14 @@
 import React from "react";
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import LogoLight from "./rive-anims/logoLight.jsx";
-import LogoDark from "./rive-anims/logoDark.jsx"
-import Mode from "./rive-anims/mode.jsx";
+import LogoLight from "@/app/rive-anims/logoLight.jsx";
+import LogoDark from "@/app/rive-anims/logoDark.jsx"
+import Mode from "@/app/rive-anims/mode.jsx";
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Skills', href: '#skills' },
+  { name: 'Home', href: '/#' },
+  { name: 'Portfolio', href: '/#portfolio' },
+  { name: 'Skills', href: '/#skills' },
 ]
 
 function classNames(...classes) {

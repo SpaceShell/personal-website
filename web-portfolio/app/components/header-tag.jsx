@@ -14,7 +14,7 @@ export default function HeaderTag({tag, iconType}) {
     return (
         <div className="bg-white content-center flex-row w-fit max-w-72 md:max-w-none mt-5 pr-4 pl-3 py-2 border-2 border-stone-800 rounded-xl headerText dark:bg-transparent dark:border-stone-200">
             {tagIcons[iconType]}
-            <p className="ml-2 inline">{tag}</p>
+            <p className={iconType ? "ml-2 inline" : "inline"}>{tag}</p>
         </div>
     )
 }

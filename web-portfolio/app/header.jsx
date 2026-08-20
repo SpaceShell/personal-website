@@ -20,8 +20,8 @@ export default function Header() {
     return(
         <header className='flex flex-col lg:px-10 justify-evenly relative'>
             <SideConnect />
-            <Image src={topLight.src} width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 block dark:hidden"/>
-            <Image src={topLightDark.src} width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 hidden dark:block"/>
+            <Image src={topLight.src} alt="Streak of red color" width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 block dark:hidden"/>
+            <Image src={topLightDark.src} alt="Streak of red color" width={260} height={100} className="absolute h-72 w-72 -top-20 right-0 z-10 hidden dark:block"/>
             <div className="flex flex-col justify-center relative mx-6 mt-24 md:mt-28 md:mx-none text-center">
                 <Image src={"/leftConnectedClouds.png"} width={260} height={100} preload={"true"} alt="On the left side, two clouds with code symbols connected by a dashed line" className="hidden md:block absolute -bottom-10 left-32"/>
                 <Image src={"/rightConnectedClouds.svg"} width={260} height={100} preload={"true"} alt="On the right side, two clouds with code symbols connected by a dashed line" className="hidden md:block absolute -top-28 right-32"/>

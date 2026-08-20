@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 
 export default function Mode() {
     const { RiveComponent } = useRive({
-        src: 'lightdark.riv',
+        src: '/lightdark.riv',
         stateMachines: 'Button State',
         autoplay: true,
     });

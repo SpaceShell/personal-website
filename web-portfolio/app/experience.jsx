@@ -5,7 +5,7 @@ import TimelinePoint from "./components/timelinePoint";
 
 export default function Experience() {
     return (
-        <section className="lg:mx-64 md:mx-32">
+        <section className="mx-0 md:mx-32 lg:mx-64">
             <div>
                 <h2 className="sectionTitle">My Experience</h2>
                 <div className="flex flex-col gap-16 relative max-w-full after:content-[''] after:w-1.5 after:h-[100%] after:lg:h-[100%] after:bg-gradient-to-b after:from-red-900 dark:after:from-red-700 after:from-90% after:to-transparent after:absolute after:left-[4rem] sm:after:left-[5rem] after:md:left-[228px] after:top-5">

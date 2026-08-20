@@ -5,7 +5,7 @@ import FocusAreaCard from "./components/focus-area-card";
 
 export default function Work() {
     return (
-        <section className="mx-16 md:mx-32 lg:mx-64">
+        <section className="sectionMargin">
             <div>
                 <h2 className="sectionTitle flex justify-center">What I Do</h2>
                     <div className="md:text-left mb-12">
