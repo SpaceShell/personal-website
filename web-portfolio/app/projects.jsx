@@ -6,7 +6,8 @@ import healthyWeb from '../public/Bootstrap-Practice/images/HomeForHealthyHabits
 import pokeWeb from '../public/AshantiPokeWeb.jpg';
 import dataScience from '../public/DataScience.jpg';
 import bookIt from '../public/BookItLogo.png';
-import quotebook from '../public/quotebook.png'
+import quotebook from '../public/quotebook.png';
+import tccoc from '../public/TCCOC/tccoc.png'
 
 export default function Projects() {
     return (
@@ -14,6 +15,17 @@ export default function Projects() {
             <div className="sectionMargin">
                 <h2 className="sectionTitle">My Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+                    <ProjectSlide 
+                        projImage={tccoc} 
+                        title={'TCCOC Website'}
+                        subtitle="TCCOC - Website Modernization"
+                        description="A live website developed with the aim of modernizing the Taiwanese Chamber of Commerce in Orange County's (TCCOC) website by improving the visualization of its brand and incorporating new features to help the non-profit reach its membership goals."
+                        topSkills={["WordPress", "Elementor", "Project Management"]}
+                        addedClasses=""
+                        href="/projects/tccoc"
+                        codeLink=""
+                    />
+
                     <ProjectSlide 
                         projImage={bookIt} 
                         title={'BookIt | Study Spot Finder'}

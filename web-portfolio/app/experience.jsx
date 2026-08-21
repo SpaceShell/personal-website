@@ -41,7 +41,7 @@ export default function Experience() {
                     />
                     <TimelinePoint 
                     date={"August 2025 - Present"} 
-                    company={"Taiwanese Chamber of Commerce in Orange County"}
+                    company={"Taiwanese Chamber of Commerce in Orange County (TCCOC)"}
                     title={"Wordpress Developer"}
                     description={["Established the tech stack and tools to be used to best fulfill the organization's goals while considering factors such as cost and scalability", "Redesigned and modernized the organization's website with UI/UX best practices in mind to clearly communicate the Chamber’s values and elevate its brand", "Built a clean, mobile-responsive website for an intuitive web experience using HTML, CSS, and WordPress + Elementor", "Integrated operation automation to streamline membership, communication, and event workflows"]}
                     />

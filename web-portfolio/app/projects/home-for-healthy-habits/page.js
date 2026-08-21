@@ -1,16 +1,16 @@
 "use client"
 
 import Tag from "@/app/components/tag";
-import Navbar from "@/app/navbar";
 import ProjectCarousel from "@/app/components/project-carousel";
 import ThemedButton from "@/app/components/ThemedButton";
+import ProjectOuterTemplate from "../project-outer-template";
+import ProjectFirstColumnContainer from "../project-first-column-container";
+import ProjectSecondColumnContainer from "../project-second-column-container";
 
 export default function HomeForHealthyHabits() {
   return (
-    <>
-      <Navbar />
-      <main className="flex flex-col lg:flex-row gap-20 mx-16 md:mx-32 lg:mx-48 my-10">
-        <div className="order-last lg:order-first basis-2/5 content-center flex flex-col justify-center items-center">
+    <ProjectOuterTemplate>
+        <ProjectFirstColumnContainer>
           <ProjectCarousel 
           image1={"/Bootstrap-Practice/images/HomeForHealthyHabits.jpg"}
           image2={"/Bootstrap-Practice/images/HomeForHealthyHabits-Services.png"}
@@ -18,11 +18,11 @@ export default function HomeForHealthyHabits() {
           />
           <div className="flex flex-col items-center gap-5 mt-10">
             <a href="/Bootstrap-Practice/index.html">
-              <ThemedButton text={"Go to Website"}/>
+              <ThemedButton text={"Visit Website"}/>
             </a>
           </div>
-        </div>
-        <div className="basis-3/5 content-center">
+        </ProjectFirstColumnContainer>
+        <ProjectSecondColumnContainer>
           <div className="flex flex-col 2xl:flex-row flex-wrap gap-5">
             <Tag tag="#Web" className="block 2xl:hidden"/>
             <h1 className="text-[2.35rem] leading-10 font-bold">Home for Healthy Habits</h1>
@@ -58,8 +58,7 @@ export default function HomeForHealthyHabits() {
               <p>Working on the project and doing hours of research into web development, I was able to successfully develop the website while both fulfilling the requirements of the mock client and implementing creative features such as CSS animations.</p>
             </div>
           </div>
-        </div>
-      </main>
-    </>
+        </ProjectSecondColumnContainer>
+    </ProjectOuterTemplate>
   );
 }
