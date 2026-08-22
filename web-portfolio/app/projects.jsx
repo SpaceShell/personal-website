@@ -8,6 +8,7 @@ import dataScience from '../public/DataScience.jpg';
 import bookIt from '../public/BookItLogo.png';
 import quotebook from '../public/quotebook.png';
 import tccoc from '../public/TCCOC/tccoc.png'
+import nqstrategies from '../public/nqstrategies.png'
 
 export default function Projects() {
     return (
@@ -25,7 +26,6 @@ export default function Projects() {
                         href="/projects/tccoc"
                         codeLink=""
                     />
-
                     <ProjectSlide 
                         projImage={bookIt} 
                         title={'BookIt | Study Spot Finder'}
@@ -35,6 +35,16 @@ export default function Projects() {
                         addedClasses="whitespace-pre-wrap"
                         href="https://www.figma.com/design/JEQtNkGZ0utko5lmWYo5z7/Hi-Fi-Wireframes?node-id=0-1&p=f"
                         codeLink=""
+                    />
+                    <ProjectSlide 
+                        projImage={nqstrategies} 
+                        title={'NQ Strategies'}
+                        subtitle="NinjaTrader - Automated Trading Strategies"
+                        description="A collection of various NQ trading strategies for NinjaTrader that seamlessly automate contracts and can be imported to the NinjaTrader platform. These automated strategies were built around the client's needs and iteratively developed to create multiple versions."
+                        topSkills={["C++", "NinjaTrader", "Communication"]}
+                        addedClasses=""
+                        href="https://github.com/SpaceShell/NQStrategies"
+                        codeLink="https://github.com/SpaceShell/NQStrategies"
                     />
                     <ProjectSlide 
                         projImage={quotebook} 
